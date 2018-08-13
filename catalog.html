@@ -8,12 +8,12 @@
 <!-- Header -->
 <header class="page-header">
   <nav class="page-header-navigation">
-    <a href="#" class="page-header-logo">
+    <a href="index.html" class="page-header-logo">
       <img src="" alt="Логотип Глейси" width="" height="" >
     </a>
     <!-- Главное меню сайта-->
     <ul class="page-header-site-navigation">
-      <li><a href="#catalog">Каталог</a></li>
+      <li class="site-navigation-current"><a href="#catalog">Каталог</a></li>
       <li><a href="#delivery">Доставка и оплата</a></li>
       <li><a href="#about-us">О компании</a></li>
     </ul>
@@ -336,13 +336,15 @@
 <!--Форма входа -->
 <section class="user-login modal">
   <!-- тут должна быть объединяющая форма входа -->
-  <input type="email" value="Электронная почта">
-  <input type="password" value="Пароль">
-  <button class="user-login btn">Войти</button>
-  <ul>
-    <li><a href="#">Забыли пароль?</a></li>
-    <li><a href="#">Новая регистрация</a></li>
-  </ul>
+  <form action="#" method="post">
+    <input type="email" value="Электронная почта">
+    <input type="password" value="Пароль">
+    <input type="submit" class="btn" value="Войти">
+    <ul>
+      <li><a href="#">Забыли пароль?</a></li>
+      <li><a href="#">Новая регистрация</a></li>
+    </ul>
+  </form>
 </section>
 
 <!-- Корзина-->

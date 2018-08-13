@@ -13,7 +13,7 @@
         </a>
         <!-- Главное меню сайта-->
         <ul class="page-header-site-navigation">
-          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#delivery">Доставка и оплата</a></li>
           <li><a href="#about-us">О компании</a></li>
         </ul>
@@ -78,7 +78,9 @@
             <li>
               <img src="#catalog" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
                  width="" height="">
-              <a href="#catalog">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <h3>
+               <a href="#catalog">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </h3>
               <p class="price">
                 310P/<span>кг</span>
               </p>
@@ -87,11 +89,15 @@
             <li>
               <img src="#catalog" alt="Сливочно-кофейное с кусочками шоколада"
                  width="" height="">
-              <a href="#catalog">Сливочно-кофейное с кусочками шоколада</a>
+              <h3>
+                <a href="#catalog">Сливочно-кофейное с кусочками шоколада</a>
+              </h3>
               <p class="price">
                 380P/<span>кг</span>
               </p>
-              <a href="#catalog" class="btn hidden">Быстрый просмотр</a>
+              <h3>
+                <a href="#catalog" class="btn hidden">Быстрый просмотр</a>
+              </h3>
             </li>
             <li>
               <img src="#catalog" alt="Сливочно-клубничное с присыпкой из белого шоколада"
@@ -211,13 +217,15 @@
   <!-- Форма входа-->
   <section class="user-login modal">
     <!-- тут должна быть объединяющая форма входа -->
-    <input type="email" value="Электронная почта">
-    <input type="password" value="Пароль">
-    <button class="user-login btn">Войти</button>
-    <ul>
-      <li><a href="#">Забыли пароль?</a></li>
-      <li><a href="#">Новая регистрация</a></li>
-    </ul>
+    <form action="#" method="post">
+      <input type="email" value="Электронная почта">
+      <input type="password" value="Пароль">
+      <input type="submit" class="btn" value="Войти">
+      <ul>
+        <li><a href="#">Забыли пароль?</a></li>
+        <li><a href="#">Новая регистрация</a></li>
+      </ul>
+    </form>
   </section>
   <!-- Корзина -->
   <section class="shopping-cart">
