@@ -19,8 +19,9 @@
     </ul>
     <!--Поиск -->
     <ul class="search">
-      <input type="text">
-      <button class="button-search">Поиск</button>
+      <form action="#" method="get">
+       <input type="search" name="search">
+      </form>
     </ul>
     <!--Поле входа -->
     <ul class="user-navigation">
@@ -49,6 +50,54 @@
   <section class="filtres">
     <h2 class="hidden">Фильтр мороженого</h2>
     <!-- Тут форма фильтров-->
+    <fieldset>
+      <legend>Сортировка мороженого</legend>
+    <form action="#" method="get">
+
+      <p class="form-style">Сортировка:</p>
+      <select name="sort" id="sort">
+        <option value="popular">По популярности</option>
+        <option value="popular-price">По цене</option>
+      </select>
+
+      <p class="form-style">Цена: 100 руб. - 500 руб.</p>
+      <input type="range" min="100" max="500" step="50" value="100">
+
+      <p class="form-style"> Жирность: </p>
+      <label>
+        <input type="radio" name="ice-fat" value="0"> 0%
+      </label>
+      <label>
+        <input type="radio" name="ice-fat" value="10"> до 10%
+      </label>
+      <label>
+        <input type="radio" name="ice-fat" value="30"> до 30%
+      </label>
+      <label>
+        <input type="radio" name="ice-fat" value="31"> выше 30%
+      </label>
+
+      <p class="form-style">Наполнители:</p>
+      <label>
+        <input type="checkbox" name="ice-view" checked>Шоколадные
+      </label>
+      <label>
+        <input type="checkbox" name="ice-view" checked>Сахарные присыпки
+      </label>
+      <label>
+        <input type="checkbox" name="ice-view">фрукты
+      </label>
+      <label>
+        <input type="checkbox" name="ice-view">сиропы
+      </label>
+      <label>
+        <input type="checkbox" name="ice-view">джемы
+      </label>
+
+      <input type="submit" value="Применить">
+    </form>
+    </fieldset>
+
   </section>
   <!-- Каталог -->
   <section class="catalog">
