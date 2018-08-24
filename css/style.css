@@ -1,0 +1,474 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+  background-color: #849d8f;
+}
+
+a:not(.footer-copyright-link):not(.page-header-logo) {
+  text-decoration: none;
+  color:#ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.3)
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-menu,
+.pagination-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.header-site-navigation,
+.catalog-navigation-items,
+.user-navigation,
+.cart-navigation,
+.slider-list,
+.slider-btn,
+.action-items,
+.catalog-items,
+.main-features-item,
+.social-btn,
+.about-production,
+.login-new,
+.about-production-list,
+.catalog-list,
+.pagination-list,
+.breadcrumbs
+ {
+  list-style: none;
+}
+
+/*.search-form label,*/
+.user-navigation a,
+.cart-navigation a {
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+/*.header-site-navigation-item a,
+.user-navigation a,
+.cart-navigation a,
+.header-contacts a,
+.action-item a,
+.slider-info + a,
+.catalog-item,
+.catalog-item a,
+.feedback-contacts a {
+  color: #ffffff;
+}*/
+.user-navigation,
+.cart-navigation,
+.header-contacts,
+.slider-info,
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.header-site-navigation-item a:hover {
+  min-width: 86px;
+  height: 32px;
+  color:#333333;
+  background-color: #f7f6f3;
+  border: 1px solid #ffffff;
+}
+
+.header-site-navigation-item a:active {
+  min-width: 86px;
+  height: 32px;
+  color:#333333;
+  border: none;
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.004);
+}
+
+.catalog-navigation-current a {
+  background-color: #d07058;
+}
+
+.search::after {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255,255,255,0.2) ;
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  border-radius: 50%;
+ display: inline-block;
+  top: 50%;
+  left: 50%;
+
+}
+
+
+.product-in-cart {
+  background-color: #f7f6f3;
+}
+
+.product-in-cart a {
+  color: #323232;
+}
+
+
+.header-contacts {
+  font-weight: 500;
+}
+
+.header-contacts a{
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.breadcrumbs {
+  font-weight: 400;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+
+}
+
+.filters {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+ /*.select option {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+} */
+
+.checkbox,
+.fat {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.background-filters {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.filter-button {
+  width: 139px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.2);
+  border:2px solid #ffffff;
+  border-radius: 50px;
+}
+
+.slider-info {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 670px;
+  max-height: 116px;
+}
+.slider-item:first-child .slider-info {
+  line-height: 60.35px;
+}
+
+
+.slider-item .btn { /*как сделать вертикальное выравнивание???*/
+  width: 280px;
+  height: 65px;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.action-item {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-image: url("../img/background/background-raspb.jpg");
+  background-repeat: no-repeat;
+}
+
+.action-item h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.action-item:last-child {
+  background-image: url("../img/background/background-choco.jpg");
+}
+
+.action-item a{
+  width: 165px;
+  height: 46px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.catalog-item-price b {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-item-price b span {
+  font-size: 40px;
+}
+
+.catalog-item h2 a
+{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+a.a-white:hover,
+a.a-white:focus,
+a.a-white:active{
+  color:#ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158,0.3);
+}
+
+.pagination-list {
+  font-weight: 500;
+}
+
+.main-features {
+  background-image: url("../img/background/Background-waffle.jpg");
+  background-repeat: repeat;
+}
+
+.main-features h1,
+.blog {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.main-blog {
+  width: 560px;
+  height: 220px;
+  background-image: url("../img/background/background-strawberry.jpg");
+  background-repeat: no-repeat;
+}
+.blog {
+  font-weight: 700;
+}
+
+.main-blog p {
+  font-weight: 500;
+
+}
+
+.blog-link {
+  width: 300px;
+  height: 133.47px;
+  text-align: left;
+}
+.main-blog a {
+  color: #323232;
+ border-bottom: 1px solid #323232;
+}
+
+.main-subscription-form {
+  width: 560px;
+  min-height: 220px;
+  background-color: #f8f7f4;
+  background-image: url("../img/bg-post.svg");
+
+}
+
+.subscription-background {
+  width: 548px;
+  min-height: 210px;
+  background-color: #f8f7f4;
+}
+
+.subscription-form-description {
+  color:#5a5a5a;
+}
+
+.feedback-contacts {
+  background-color: #fffffe;
+}
+.contacts,
+.phone-shop,
+.time-work {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.shop-adress,
+.phone,
+.feedback-contacts a{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.about-production-list{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+/*.about-production-list a,
+.footer-copyright a:not(.footer-copyright-link) {
+  border-bottom: 1px solid #ffffff;
+}*/
+.about-production-list li:first-child {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fffffe;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder,
+.sudscription-mail::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.sudscription-mail::placeholder {
+  font-size: 16px;
+}
+
+.login-new a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color:#323232;
+}
+
+.shopping-cart {
+  background-color: #f8f7f4;
+}
+
+.cart-table {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.cart-table span {
+  color: #9f9f9f;
+}
+
+.ice-name {
+  color: #323232;
+}
+.total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.btn{
+  background: none;
+  border: 0;
+  color: #ffffff;
+  font-size:18px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.btn-send {
+  min-width: 128px;
+  height: 43px;
+}
+
+.btn-enter {
+  width: 100px;
+  height: 44px;
+}
+
+.feedback-contacts a {
+  width: 251px;
+  height: 43px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.btn-issue {
+  width: 170px;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border-radius: 50px;
+
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  -webkit-transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.btn:hover, /* Не понятно как сделать цвет макета*/
+.btn:focus {
+  /* background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.2), rgba(255,255,255, 0.2));*/
+  background-image: -webkit-linear-gradient( 90deg, rgba(231,74,53,0.8) 0%, rgba(242,104,67, 0.8) 100%);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.07), rgba(0,0,0, 0.07));
+  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0 2px 2px 0  #952718/*rgba(148, 39, 24, 0.004)*/;
+}
+
+
