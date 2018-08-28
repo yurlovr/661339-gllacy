@@ -8,9 +8,9 @@ body { /* Общие стили для боди*/
   color: #323232;
   background-color: #849d8f;
   max-width: 1200px;
- display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
   margin-left: auto;
   margin-right: auto;
   border: 1px dotted black;
@@ -30,7 +30,8 @@ body { /* Общие стили для боди*/
 .login-new-items,
 .breadcrumbs,
 .pagination-items,
-.social-btn-items
+.social-btn-items,
+.search-list
 {
   list-style: none;
 }
@@ -102,29 +103,40 @@ a { /* стили для всех ссылок кроме лого сайта и
 }
 
 .header-site-navigation-items {
-  width: 500px;
+  min-width: 550px;
 }
-.header-site-navigation-item a {
-  display: block;
+.header-site-navigation-item a { /*Обычное состояние каталог досьавка о компании*/
+  display: inline-block;
   margin: 0;
   margin-right: 27px;
+  margin-left: 27px;
+
+  margin-bottom: 10px;
+  margin-top: 9px;
+
   vertical-align: middle;
   min-width: 50px;
   border-bottom: 1px solid rgba(255,255,255,0.2);
 
 }
 
-.header-site-navigation-item a:hover,
+.header-site-navigation-item a:hover, /* Наведение на каталог*/
 .header-site-navigation-item a:focus {
 
   color: #323232;
   background-color: #f8f7f4;
   border: 1px solid #ffffff;
   border-radius: 50px;
-  padding-left: 13px;
+
+  padding-left: 14px;
   padding-right: 13px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  margin-bottom:0;
+  margin-top: 0;
+  margin-right: 12px;
+  margin-left: 13px;
 
 }
 
@@ -746,6 +758,9 @@ a.quick-view {
   margin-bottom: 8px;
 }
 
+
+
+
 .page-header {
   border: 1px solid red;
   align-self: stretch;
@@ -753,22 +768,43 @@ a.quick-view {
  justify-content: flex-start;
   position: relative;
 }
-.page-header-logo {
+.page-header-logo { /*Логотип*/
+  margin: 0;
+  padding:0;
   margin-top: 9px;
-  margin-right: 24px;
+  margin-left: 27px;
+  padding-right: 24px;
 }
+/*
 .page-header-navigation {
   display: flex;
   border: 1px solid darkmagenta;
   align-self: flex-start;
+}*/
+
+.page-header-navigation {
+  border: 1px solid darkblue;
+  display: flex;
+
+
 }
 
-.header-site-navigation-items {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
+.header-site-navigation-items { /*Каталог Доставка о компании*/
+  padding: 0;
   margin: 0;
+  margin-top: 23px;
+  /*margin-left: 24px;*/
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid limegreen;
 }
+
+.container-user-menu {
+  border: 1px solid coral;
+  display: flex;
+}
+
+/*
 .header-site-navigation-item:not(:last-child) {
   margin-right: 27px;
 }
@@ -784,7 +820,7 @@ a.quick-view {
 
 .cart-link-empty {
   margin-top: 23px;
-}
+}*/
 .open-close {
   position: absolute;
   top:61px;
