@@ -268,7 +268,7 @@ background-color: #d07058;
   color: #ffffff;
   border-radius: 15px;
   background-image: url("../img/background/background-raspb.jpg");
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 
 }
 
@@ -278,7 +278,7 @@ background-color: #d07058;
 .action-item h3 {
   font-size: 35px;
   line-height: 41px;
-  padding-left: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   margin-top: 23px;
 }
@@ -288,17 +288,26 @@ background-color: #d07058;
 }
 
 .action-description {
-  width: 526px;
-  padding-left: 20px;
+  min-width: 526px;
+  margin-left: 20px;
   margin-bottom: 45px;
 
 }
 
 .action-item a {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
-  width: 165px;
-  height: 46px;
+  margin-right: 21px;
+  float: right;
+  margin-bottom: 24px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-right: 23px;
+  padding-left: 21px;
+
 }
 
 .catalog-item a {
@@ -690,13 +699,25 @@ a.quick-view {
 }
 
 .action-items {
+  margin: 0;
+  padding: 0;
   border: 1px solid yellow;
   display: flex;
   justify-content: space-between;
+  margin-top: 41px;
 }
 
 .action-item {
   width: 560px;
+}
+
+.action-item:first-child {
+  margin-left: 27px;
+  margin-right: 0;
+}
+
+.action-item:last-child {
+  margin-right: 27px;
 }
 
 .slider-btn-items {
@@ -894,6 +915,4 @@ a.quick-view {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.main-action-container {
-  margin-top: 40px;
-}
+
