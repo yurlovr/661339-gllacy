@@ -316,15 +316,29 @@ background-color: #d07058;
 }
 
 .catalog-item-price {
+  margin: 0;
+  padding: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
+  position: absolute;
+  top: 214px;
+  left: 0;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 .catalog-item-price span {
   font-size: 40px;
 }
+
+.catalog-items h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
+  text-align: center;
+}
+
+
 .main-features {
 
   background-image: url("../img/background/Background-waffle.jpg");
@@ -686,6 +700,11 @@ a.quick-view {
 
 
 .catalog-items {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 27px;
+  margin-right: 27px;
   border: 1px solid darkred;
   display: flex;
   justify-content: space-between;
@@ -695,6 +714,7 @@ a.quick-view {
 .catalog-item {
   width: 267px;
   border: 1px solid black;
+  position: relative;
 
 }
 
