@@ -9,15 +9,16 @@
   </head>
   <body>
   <!-- Header -->
+
     <header class="page-header">
       <!-- Логотип не является ссылкой-->
       <p class="page-header-logo">
         <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64" >
       </p>
-
         <!-- Главное меню сайта-->
       <nav class="page-header-navigation" aria-label="Главное Меню">
         <!--Меню сайта -->
+
         <section class="main-menu">
           <h3 class="visually-hidden">Главное меню сайта</h3>
 
@@ -35,8 +36,8 @@
              <li class="header-site-navigation-item"><a href="aboutus.html">О компании</a></li>
           </ul>
 
-        </section>
 
+        </section>
         <!--Поиск -->
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="search" aria-label="Поиск">тут лупа
@@ -58,7 +59,10 @@
           </li>
         </ul>
 
+
       </nav>
+
+
         <!-- Режим работы -->
         <section class="open-close">
           <h3 class="visually-hidden" > Режим работы магазина </h3>
@@ -70,13 +74,15 @@
         </section>
     </header>
 
-  <!-- Main -->
-    <main class="main-content">
 
+
+  <!-- Main -->
+
+ <main class="main-content">
       <!-- Слайдер-->
         <section  class="slider-img">
         <h3 class="visually-hidden">Специальное предложение</h3>
-
+          <div class="container-slider">
             <ul class="slider-items">
               <!---------------------------------------------------------------->
               <li class="slider-item">
@@ -85,13 +91,13 @@
                   <a href="catalog/special-combo3.html" class="btn">Давайте оба!</a>
               </li>
               <!---------------------------------------------------------------->
-              <li class="slider-item" hidden>
+              <li class="slider-item visually-hidden" hidden>
                 <img src="img/content/slider2.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1065" height="859">
                 <p class="slider-info"> Крем-брюле и пломбир с малиновым джемом</p>
                 <div class="div"><a href="catalog/special-combo1.html" class="btn">Давайте оба!</a></div>
               </li>
               <!---------------------------------------------------------------->
-              <li class="slider-item" hidden>
+              <li class="slider-item visually-hidden" hidden>
                 <img src="img/content/slider3.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1079" height="854">
                 <p class="slider-info"> Крем-брюле и пломбир с малиновым джемом</p>
                 <a href="catalog/special-combo2.html" class="btn">Давайте оба!</a>
@@ -104,7 +110,11 @@
               <li><button class="slider-btn-item btn-null" aria-label="Второе предложение"></button></li>
               <li><button class="slider-btn-item btn-null" aria-label="Третье предложение"></button></li>
             </ul>
+          </div>
         </section>
+
+
+
 
       <!-- Акции магазина -->
       <section class="main-action">
@@ -113,7 +123,7 @@
 
         <!-- Блоки с акциями-->
         <section class="main-action-container">
-
+        <div class="container-action">
           <h3 class="visually-hidden">Подарки при покупках</h3>
           <ul class="action-items">
             <li class="action-item">
@@ -134,6 +144,7 @@
               <a href="catalog/action/item1.html" class="btn">Хочу шоколадки!</a>
             </li>
           </ul>
+        </div>
         </section>
 
 
@@ -144,7 +155,7 @@
           <ul class="catalog-items">
             <!---------------------------------------------------------------->
             <li class="catalog-item hit">
-              <img src="img/hit.svg" alt="ХИТ" width="61" height="61"> <!-- лейбл Хит сделаю ::before-->
+              <!--<img src="img/hit.svg" alt="ХИТ" width="61" height="61">--> <!-- лейбл Хит сделаю ::before-->
               <!-- как спозиционировать лейбл, относительно родительской li-->
               <a href="catalog/creamy/item0.html">
                 <img src="img/content/orange.jpg" class="ice-in-catalog" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -158,7 +169,7 @@
             </li>
             <!---------------------------------------------------------------->
             <li class="catalog-item hit">
-              <img src="img/hit.svg" alt="ХИТ" width="61" height="61"> <!-- лейбл Хит сделаю ::before-->
+              <!--<img src="img/hit.svg" alt="ХИТ" width="61" height="61">--> <!-- лейбл Хит сделаю ::before-->
               <a href="catalog/creamy/item1.html">
                 <img src="img/content/coffee.jpg" class="ice-in-catalog" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
               </a>
@@ -171,7 +182,7 @@
             </li>
             <!---------------------------------------------------------------->
             <li class="catalog-item hit">
-              <img src="img/hit.svg" alt="ХИТ" width="61" height="61"> <!-- лейбл Хит сделаю ::before-->
+              <!--<img src="img/hit.svg" alt="ХИТ" width="61" height="61">--> <!-- лейбл Хит сделаю ::before-->
               <a href="catalog/creamy/item2.html">
                 <img src="img/content/pink.jpg" class="ice-in-catalog" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
               </a>
@@ -184,7 +195,7 @@
             </li>
             <!---------------------------------------------------------------->
             <li class="catalog-item hit">
-              <img src="img/hit.svg" alt="ХИТ" width="61" height="61"> <!-- лейбл Хит сделаю ::before-->
+              <!--<img src="img/hit.svg" alt="ХИТ" width="61" height="61">--> <!-- лейбл Хит сделаю ::before-->
               <a href="catalog/creamy/item3.html">
                 <img src="img/content/cream-brl.jpg" class="ice-in-catalog" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
               </a>
@@ -201,6 +212,7 @@
       </section>
 
       <!-- Описание магазина -->
+      <div class="container-features">
       <section class="main-features">
 
           <h1>Магазин Глэйси  -
@@ -243,25 +255,33 @@
         </form>
         </div>
       </section>
+      </div>
 
     <!-- Карта -->
       <section class="main-map">
         <h3 class="visually-hidden">Карта проезда</h3>
         <div class="map">
           <img src="img/content/map.jpg" alt="Карта проезда" width="1200" height="430">
-        </div>
+
+
         <div class="feedback-contacts">
           <p class="contacts">
-            Адрес главного офиса и офлайн-магазина:<br>
-            <span class="shop-adress"> ул. Большая Конюшенная <br>
-                                  19/8, Санкт-Петербург</span>
+            Адрес главного офиса и офлайн-магазина:
           </p>
+            <p class="shop-adress"> ул. Большая Конюшенная <br>
+                                  19/8, Санкт-Петербург
+            </p>
+
+
           <p class="phone-shop">
-            Для заказов по телефону:<br>
+            Для заказов по телефону:
+          </p>
+          <p class="phone-time-work">
             <span class="phone"> 8 812 450-25-25</span><br>
             <span class="time-work">(c 10 до 20 ежедневно)</span>
           </p>
           <a href="#" class="btn btn-feedback" aria-label="Открыть форму обратной связи">Форма обратной связи</a>
+        </div>
         </div>
       </section>
     </main>
@@ -272,10 +292,10 @@
     <footer class="page-footer">
       <section class="social-links">
         <ul class="social-btn-items">
-          <li><a class="twitter" href="#" aria-label="Подпишись на нас в Твиттере"><span class="visually-hidden"> Твиттер</span></a></li>
-          <li><a class="instagram" href="#" aria-label="Подпишись на нас в Инстаграмме"><span class="visually-hidden">Инстаграмм</span></a></li>
-          <li><a class="facebook" href="#" aria-label="Наша страничка на Фейсбуке"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class=" vkontakte" href="#" aria-label="Наша страничка Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="twitter" href="#" aria-label="Подпишись на нас в Твиттере"><span> Твит</span></a></li>
+          <li><a class="instagram" href="#" aria-label="Подпишись на нас в Инстаграмме"><span>Инст</span></a></li>
+          <li><a class="facebook" href="#" aria-label="Наша страничка на Фейсбуке"><span>Фейс</span></a></li>
+          <li><a class=" vkontakte" href="#" aria-label="Наша страничка Вконтакте"><span>Вкон</span></a></li>
         </ul>
       </section>
 
@@ -302,7 +322,7 @@
 
   <script></script>
   <!-- Форма входа-->
-  <section class="user-login modal">
+  <section class="user-login modal visually-hidden">
     <h3 class="visually-hidden">Форма входа</h3>
     <!-- тут должна быть объединяющая форма входа -->
     <form action="https://echo.htmlacademy.ru" method="post">
@@ -321,7 +341,7 @@
   </section>
 
   <!-- Корзина -->
-  <section class="shopping-cart" aria-label="Корзина покупок." >
+  <section class="shopping-cart visually-hidden" aria-label="Корзина покупок." >
     <h3 class="visually-hidden">Корзина покупок</h3>
     <table class="cart-table">
       <tr>
