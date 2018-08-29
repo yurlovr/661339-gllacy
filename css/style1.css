@@ -47,8 +47,8 @@ body { /* Общие стили для боди*/
   background: none;
   border: 0;
   color: #ffffff;
-  font-size:0px;
-  line-height: 0px;
+  font-size:0;
+  line-height: 0;
   font-weight: 400;
   overflow: visible;
   padding: 0;
@@ -343,6 +343,7 @@ background-color: #d07058;
 
   background-image: url("../img/background/Background-waffle.jpg");
   background-repeat: repeat;
+  padding-bottom: 26px;
 }
 
 .main-features h1,
@@ -357,7 +358,56 @@ background-color: #d07058;
   padding:0;
   margin-left: 21px;
   margin-top: 29px;
+  margin-bottom: 26px;
 }
+
+.main-features-items {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1093px;
+  align-items: stretch;
+  justify-content: space-between;
+
+
+
+
+
+}
+
+.main-features-items li {
+
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.main-features-item-make  {
+  order:1;
+  padding-left: 56px;
+  max-width: 476px;
+}
+.main-features-item-ingridient {
+  order: 2;
+  padding-left: 56px;
+  max-width: 476px;
+}
+
+.main-features-item-natural  {
+  order: 3;
+  padding-left: 58px;
+  max-width: 470px;
+}
+
+.main-features-item-delivery  {
+  order: 4;
+  padding-left: 58px;
+  max-width: 470px;
+}
+
 .main-blog {
   background-image: url("../img/background/background-strawberry.jpg");
   background-repeat: no-repeat;
