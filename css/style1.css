@@ -350,7 +350,10 @@ a { /* стили для всех ссылок кроме лого сайта и
 .catalog-items h2 {
   margin: 0;
   padding: 0;
-  margin-top: 17px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -756,20 +759,43 @@ input[type="search"]:active {
 }
 
 
+.ice-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  width: 293px;
+  height: 405px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(248,247,244,0.2);
+  border-radius: 5px;
+  ;
+}
+
+
 a.quick-view {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 339px;
+  left: 46px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   max-width: 200px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   display: none;
 }
-.ice-container {
-  width: 293px;
-}
 
-.ice-container:hover,
-.ice-container:focus { /*как сделать появление кнопки и фона при переключении табом*/
-  background-color: rgba(248,247,244,0.2);
+
+.catalog-item:hover .ice-container,
+.ice-container:focus .ice-container { /*как сделать появление кнопки и фона при переключении табом*/
+  display: block;
+
 }
 
 .ice-container:hover a.quick-view,
