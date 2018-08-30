@@ -29,25 +29,31 @@
     </section>
 
     <!--Поиск -->
-    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-      <label aria-label="Поиск"> Тут лупа
-        <input type="search" class="visually-hidden" name="search" placeholder="Что ищем?">
-      </label>
-    </form>
+    <div class="container-user-menu">
 
-    <!--Поле входа -->
-    <ul class="user-navigation-items">
-      <li class="login-link">
-        <a href="login.html" aria-label="Вход в профиль"><span class="login"></span> Вход</a>
-      </li>
-    </ul>
+      <ul class="search-list">
+        <li><form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="search" aria-label="Поиск">
+            <input type="search" class="visually-hidden" name="search" placeholder="Что ищем?">
+          </label>
+        </form>
+        </li>
+      </ul>
+
+      <!--Поле входа -->
+      <ul class="user-navigation-items">
+        <li class="login-link">
+          <a href="login.html" aria-label="Вход в профиль"><span class="login"></span> Вход</a> <!-- спан для иконки-->
+        </li>
+      </ul>
 
     <!--Корзина -->
     <ul class="cart-navigation-items product-in-cart ">
-      <li class="cart-link">
+      <li class="cart-link cart-link-empty">
         <a href="shop-cart.html" aria-label="Корзина покупок"><span class="cart"></span>2 товара</a>
       </li>
     </ul>
+    </div>
   </nav>
     <!-- Режим работы -->
   <section class="open-close">
@@ -67,7 +73,7 @@
   <ul class="breadcrumbs">
     <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
     <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
-    <li class="breadcrumbs-item"><a href="catalog/creamy.html"aria-label="Вы находитесь в каталоге в разделе Сливочное мороженое">Сливочное</a></li> <!-- Открывает карту мороженого-->
+    <li class="breadcrumbs-item"><a href="catalog/creamy.html" class="current-breadcrumbs" aria-label="Вы находитесь в каталоге в разделе Сливочное мороженое">Сливочное</a></li> <!-- Открывает карту мороженого-->
   </ul>
 
   <h1 class="page-title">Сливочное морожение</h1> <!-- На этой странице один h1-->
@@ -385,7 +391,7 @@
 <script></script>
 
 <!-- Форма входа-->
-<section class="user-login modal">
+<section class="user-login modal visually-hidden">
   <h3 class="visually-hidden">Форма входа</h3>
   <!-- тут должна быть объединяющая форма входа -->
   <form action="https://echo.htmlacademy.ru" method="post">
@@ -404,7 +410,7 @@
 </section>
 
 <!-- Корзина-->
-<section class="shopping-cart" aria-label="Корзина покупок." >
+<section class="shopping-cart visually-hidden" aria-label="Корзина покупок." >
   <h3 class="visually-hidden">Корзина покупок</h3>
   <table class="cart-table">
     <tr>
