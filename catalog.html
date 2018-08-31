@@ -78,8 +78,8 @@
 <main class="container">
 
   <ul class="breadcrumbs">
-    <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-    <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+    <li class="breadcrumbs-item"><a href="index.html">Главная </a><span>&#187</span></li>
+    <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a><span>&#187</span></li>
     <li class="breadcrumbs-item"><a href="catalog/creamy.html" class="current-breadcrumbs" aria-label="Вы находитесь в каталоге в разделе Сливочное мороженое">Сливочное</a></li> <!-- Открывает карту мороженого-->
   </ul>
 
@@ -362,13 +362,27 @@
     <section>
       <h3 class="visually-hidden">Навигация по страницам каталога</h3>
       <ul class="pagination-items">
-        <li class="pagination-item"><a href="#" aria-label="Предыдущая страница"><span></span></a></li> <!--В span фоном вставить иконку-->
+        <li class="pagination-item"><a href="#" class="pagination-item-previous" aria-label="Предыдущая страница">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	           width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
+            <path fill="#f8f9f8" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
+                	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
+                	C7.436,6.16,7.436,5.84,7.237,5.642z"/>
+          </svg>
+        </a></li> <!--В span фоном вставить иконку-->
         <li class="pagination-item"><a href="#" class="pagination-item-current"  aria-label="Вы на первой странице">1</a></li>
         <li class="pagination-item"><a href="#"  aria-label="Вторая страница">2</a></li>
         <li class="pagination-item"><a href="#" aria-label="Третья страница">3</a></li>
         <li class="pagination-item"><a href="#" aria-label="Четвертая страница">4</a></li>
         <li class="pagination-item"><a href="#" aria-label="Пятая страница">5</a></li>
-        <li class="pagination-item"><a href="#" aria-label="Следующая страница"><span></span></a></li>
+        <li class="pagination-item"><a href="#" aria-label="Следующая страница">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	           width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
+            <path fill="#f8f9f8" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
+                	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
+                	C7.436,6.16,7.436,5.84,7.237,5.642z"/>
+          </svg>
+        </a></li>
       </ul>
     </section>
   </section>

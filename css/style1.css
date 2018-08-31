@@ -320,9 +320,12 @@ a { /* стили для всех ссылок кроме лого сайта и
   display: flex;
   font-weight: 400;
 }
+.breadcrumbs-item span {
+  margin-right: 9px;
+}
 
 .breadcrumbs-item a:not(.current-breadcrumbs) {
-  margin-right: 22px;
+  margin-right: 9px;
   border-bottom: 1px solid rgba(253,254,254,0.2);
 }
 
@@ -764,6 +767,13 @@ input[type="search"] {
   justify-content: flex-end;
   line-height: 18px;
   font-weight: 500;
+  position: relative;
+}
+
+.pagination-item-previous {
+  fill:#fff;
+  opacity: 0.2;
+  transform: rotate(180deg);
 }
 
 .pagination-item a {
@@ -778,8 +788,8 @@ input[type="search"] {
   margin-right: 0;
 }
 
-.pagination-item  a:hover:not(.pagination-item-current), /*как выровнять внутри круга*/
-.pagination-item a:focus:not(.pagination-item-current) {
+.pagination-item  a:hover:not(.pagination-item-current):not(.pagination-item-previous), /*как выровнять внутри круга*/
+.pagination-item a:focus:not(.pagination-item-current):not(.pagination-item-previous) {
 
   background-color: rgba(255,255,255,0.4);
   border-radius: 50%;
@@ -794,6 +804,9 @@ input[type="search"] {
   background-color:#ffffff;
   border-radius: 50%;
   display: block;
+}
+.pagination-item a:active path {
+  fill:#000;
 }
 
 .end-line {
@@ -1018,7 +1031,7 @@ a.quick-view {
   top: 25px;
   left: -21px;
   height: 1px;
-  width: 128px;
+  width: 222%;
   border-bottom: 1px solid rgba(53, 53, 53, 0.2);
 }
 
