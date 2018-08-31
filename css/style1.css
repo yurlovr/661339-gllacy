@@ -216,8 +216,20 @@ a { /* стили для всех ссылок кроме лого сайта и
   top: 7px;
 }
 
-.cart-link-empty a:hover::before,
-.cart-link-empty a:focus::before {
+.cart-link.cart-link-empty a::before {
+  position: absolute;
+  content: "";
+  margin: 0;
+  padding: 0;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
+  left: 18px;
+  top: 7px;
+}
+
+.cart-link-empty a.cart:hover::before,
+.cart-link-empty a.cart:focus::before {
   background-image: url("../img/basket-black.svg");
 }
 
