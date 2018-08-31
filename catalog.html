@@ -30,11 +30,17 @@
 
     <!--Поиск -->
     <div class="container-user-menu">
-
       <ul class="search-list">
         <li><form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="search" aria-label="Поиск">
-            <input type="search" class="visually-hidden" name="search" placeholder="Что ищем?">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
+                13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981
+                11 6.5 11z"/>
+            </svg>
+            <div class="search-field-container">
+              <input type="search" class=" search-field" name="search" placeholder="Что ищем?">
+            </div>
           </label>
         </form>
         </li>
@@ -43,7 +49,8 @@
       <!--Поле входа -->
       <ul class="user-navigation-items">
         <li class="login-link">
-          <a href="login.html" aria-label="Вход в профиль"><span class="login"></span> Вход</a> <!-- спан для иконки-->
+          <a href="login.html" class="enter-button" aria-label="Вход в профиль">
+            Вход</a> <!-- спан для иконки-->
         </li>
       </ul>
 
@@ -386,7 +393,7 @@
   <!--Футер меню -->
   <section class="about-production">
     <ul class="about-production-items">
-      <li><span class="heart"></span> <a href="#" class="a-white" aria-label="Информация для поставщиков"><span>Для поставщиков</span></a></li>
+      <li class="heart"><a href="#" class="a-white" aria-label="Информация для поставщиков"><span>Для поставщиков</span></a></li>
       <li><a href="#" class="a-white" aria-label="Действующие документы о нашей деятельности">Наши документы</a></li>
       <li><a href="#" class="a-white" class="a-white" aria-label="О нашем производстве">О производстве</a></li>
       <li><a href="#" class="a-white" aria-label="Действующие экологические стандарты">Экологические стандарты</a></li>
