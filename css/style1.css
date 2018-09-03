@@ -461,6 +461,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   line-height: 22px;
   font-weight: 700;
   margin-top: 10px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -702,21 +703,15 @@ input[type="search"] {
   color: #ffffff;
 }
 .filter-form {
+  width: 901px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color:#ffffff;
-
-}
-
-.form-sort {
   margin: 0;
   padding: 0;
   margin-left: 27px;
   border: 1px solid saddlebrown;
-  display: flex;
-  flex-wrap: wrap;
-
 }
 
 .form-select,
@@ -725,55 +720,267 @@ input[type="search"] {
 .form-ice-with {
   margin: 0;
   padding: 0;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .form-select {
-  max-width: 194px;
+  width: 194px;
+  margin-right: 14px;
+  margin-bottom: 15px;
   border: 1px solid black;
+}
+
+.select {
+  margin: 0;
+  padding: 0;
+  min-width: 194px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  margin-top: 6px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.2);
+  color: #ffffff;
+  border: none;
+  /*background: url(../img/select-arrow.svg) no-repeat 180px 18px;*/
+}
+
+.select:hover,
+.select:focus {
+  color: #323232;
+}
+
+.select:active {
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .form-price {
   border: 1px solid black;
-  max-width: 220px;
+  width: 220px;
+  margin-right: 14px;
+}
+
+.form-price legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.range-filter {
+  margin-top: 1px;
+}
+
+.range-controls {
+  position: relative;
+  height: 21px;
+  padding-top: 16px;
+  padding-right: 22px;
+  padding-left: 22px;
+  margin-bottom: 15px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background-color: rgba(255,255,255,0.5)
+}
+
+.range-controls .bar {
+  height: 4px;
+  background-color: #f8f7f4;
+  width: 107px;
+  margin-left: 38px;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 43px;
+}
+
+.range-controls .toggle-max {
+  left: 158px;
+}
+
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.price-controls input {
+  margin: 0;
+  padding: 0;
+  width: 57px;
+  height: 20px;
+  background-color: #849d8f;
+  border: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-controls input:focus .toggle.toggle-min,
+.price-controls input:focus .toggle.toggle-max {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+label.min-price {
+  padding-left: 16px;
+}
+
+.fat {
+  position: relative;
+  cursor: pointer;
+  padding-left: 32px;
+  padding-right: 16px;
+}
+
+.form-fat p {
+  margin-top: 2px;
+}
+
+.fat input[type="radio"] +
+.radio-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+  background-image: url("../img/radio-off.svg");
+}
+
+.fat input[type="radio"] + .radio-indicator:hover,
+
+.fat input[type="radio"] + .radio-indicator:focus,
+
+.fat input[type="radio"]:hover + .radio-indicator
+{
+  opacity: 1;
+}
+
+.fat input[type="radio"]:focus + .radio-indicator{
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.fat input[type="radio"]:checked + .radio-indicator {
+  opacity: 1;
+  background-image: url("../img/radio-on.svg");
+}
+
+.background-filters {
+  margin: 0;
+  padding: 0;
+  height: 18px;
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.form-ice-with {
+  margin-right: 14px;
+}
+
+.form-ice-with p {
+  margin-top: 2px;
+}
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  padding-left: 33px;
+  padding-right: 17px;
+}
+
+.checkbox input[type="checkbox"] +
+.check-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  opacity: 0.8;
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.checkbox input[type="checkbox"] + .check-indicator:hover,
+
+.checkbox input[type="checkbox"] + .check-indicator:focus,
+
+.checkbox input[type="checkbox"]:hover + .check-indicator
+{
+  opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:focus + .check-indicator{
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox input[type="checkbox"]:checked + .check-indicator {
+  opacity: 1;
+  width: 27px;
+
+  background-image: url("../img/checkbox-on.svg");
 }
 
 
 .form-style {
+  margin: 0;
+  padding: 0;
+  min-width: 163px;
   font-size: 14px;
   line-height: 16px;
+  padding-left: 16px;
+  margin-bottom: 6px;
 }
 
-.background-filters {
-  background-color: rgba(255,255,255,0.2);
-}
-
-.form-style select {
-  color: #ffffff;
-  border: none;
-}
-
-.form-style select:hover,
-.form-style select:focus {
-  color: #323232;
-}
-
-.form-style select:active {
- background-color: #ffffff;
-  color: #323232;
-}
 
 .filter-form fieldset{
-  border:none;
+
+  /*border:none;*/
 }
 
 .filter-button {
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  padding-left: 29px;
+  padding-right: 27px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+
   color: #ffffff;
   border: 2px solid #ffffff;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: rgba(255,255,255,0.2);
+  vertical-align: bottom;
 }
 
 .filter-button:hover,
@@ -792,7 +999,7 @@ input[type="search"] {
 .pagination-items {
   margin: 0;
   padding: 0;
-  margin-top: 87px;
+  margin-top: 40px;
   margin-right: 27px;
   display: flex;
   justify-content: flex-end;
@@ -1488,4 +1695,16 @@ a.quick-view {
   padding-bottom: 16px;
 }
 
-
+.page-header-catalog {
+  position: relative;
+}
+.page-header-catalog::before {
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 640px;
+  background-image: url("../img/background/catalog-light.png");
+  z-index: -1;
+  top: 0;
+  left: 0;
+}

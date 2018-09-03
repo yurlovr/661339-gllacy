@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- Header -->
-<header class="page-header">
+<header class="page-header page-header-catalog">
   <nav class="page-header-navigation">
 
     <a href="index.html" class="page-header-logo">
@@ -92,41 +92,69 @@
     <!-- Тут форма фильтров-->
     <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-      <fieldset class="form-sort">
+      <fieldset class="form-select">
 
         <legend class="visually-hidden">Сортировка мороженого</legend>
-        <label class="form-style form-select" aria-label="Сортировка мороженого">Сортировка:
-            <select class="background-filters" name="sort" id="sort" class="select">
-              <option value="popular">По популярности</option>
-              <option value="popular-price">По цене</option>
+        <label class="form-style" aria-label="Сортировка мороженого">Сортировка:
+            <select class="select" name="sort" id="sort">
+              <option value="popular">по популярности</option>
+              <option value="popular-price">по цене</option>
             </select>
         </label>
+      </fieldset>
 
+      <fieldset class="filter-item form-price">
+        <legend class="visually-hidden" aria-label="Выбирите цену мороженного"> Цена:</legend>
+        <div class="range-filter">
 
-        <fieldset class="form-price">
+          <div class="price-controls">
+            <label class="min-price" aria-label="Введите минимальную стоимость"> Цена: <input name="min-price" type="text" value="100 руб."></label>
+            <label class="max-price" aria-label="Введите максимальную стоимость"> - <input name="max-price" type="text" value="500 руб."></label>
+          </div>
+
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+
+        </div>
+      </fieldset>
+
+       <!-- <fieldset class="form-price">
           <legend class="visually-hidden"> Цена:</legend>
           <label class="form-style" aria-label="Выбирите цену мороженного"> Цена: 100 руб.- 500 руб.
-            <span></span><div class="background-filters"></div><span></span>
-              <input type="number" class="visually-hidden" name="price"  value="100"><span></span>
-              <input type="number" class="visually-hidden" name="price"  value="500">
-          </label>
-        </fieldset>
+          <span></span><div class="background-filters"></div><span></span>
+          <input type="number" class="visually-hidden" name="price"  value="100"><span></span>
+          <input type="number" class="visually-hidden" name="price"  value="500">
+        </label>
+        </fieldset> -->
 
         <fieldset class="form-fat">
           <legend class="visually-hidden" aria-label="Выбирите жирность мороженого">Жирность</legend>
           <p class="form-style" >Жирность:</p>
           <div class="background-filters">
             <label class="fat">
-              <input type="radio" name="fat" value="0" aria-label="Выбирите жирность мороженого. Жирность 0%"> 0%
+              <input type="radio" class="visually-hidden" name="fat" value="0" aria-label="Выбирите жирность мороженого. Жирность 0%">
+              <span class ="radio-indicator"></span>
+              0%
             </label>
             <label class="fat">
-              <input type="radio" name="fat" value="10" checked aria-label="Выбирите жирность мороженого. Жирность до 10%"> до 10%
+              <input type="radio" class="visually-hidden" name="fat" value="10" checked aria-label="Выбирите жирность мороженого. Жирность до 10%">
+              <span class ="radio-indicator"></span>
+              до 10%
             </label>
             <label class="fat">
-              <input type="radio" name="fat" value="30" aria-label="Выбирите жирность мороженого. Жирность до 30%"> до 30%
+              <input type="radio" class="visually-hidden" name="fat" value="30" aria-label="Выбирите жирность мороженого. Жирность до 30%">
+              <span class ="radio-indicator"></span>
+              до 30%
             </label>
             <label class="fat">
-              <input type="radio" name="fat" value="31" aria-label="Выбирите жирность мороженого. Жирность больше 30%"> выше 30%
+              <input type="radio" class="visually-hidden" name="fat" value="31" aria-label="Выбирите жирность мороженого. Жирность больше 30%">
+              <span class ="radio-indicator"></span>
+              выше 30%
             </label>
           </div>
         </fieldset>
@@ -136,25 +164,35 @@
           <p class="form-style" aria-label="Выбирите наполнитель для мороженого">Наполнители:</p>
           <div class="background-filters">
             <label class="checkbox">
-              <input type="checkbox" name="chocolate-ice" aria-label="Выбирите наполнитель для мороженого. Шоколадные" checked>шоколадные
+              <input type="checkbox" class="visually-hidden" name="chocolate-ice" aria-label="Выбирите наполнитель для мороженого. Шоколадные" checked>
+              <span class ="check-indicator"></span>
+              шоколадные
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="sugar-ice" aria-label="Выбирите наполнитель для мороженого. Сахарные присыпки." checked>сахарные присыпки
+              <input type="checkbox" class="visually-hidden" name="sugar-ice" aria-label="Выбирите наполнитель для мороженого. Сахарные присыпки." checked>
+              <span class ="check-indicator"></span>
+              сахарные присыпки
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="friut-ice" aria-label="Выбирите наполнитель для мороженого. Фрукты">фрукты
+              <input type="checkbox" class="visually-hidden" name="friut-ice" aria-label="Выбирите наполнитель для мороженого. Фрукты">
+              <span class ="check-indicator"></span>
+              фрукты
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="sirop-ice" aria-label="Выбирите наполнитель для мороженого. Сиропы.">сиропы
+              <input type="checkbox" class="visually-hidden" name="sirop-ice" aria-label="Выбирите наполнитель для мороженого. Сиропы.">
+              <span class ="check-indicator"></span>
+              сиропы
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="jam-ice" aria-label="Выбирите наполнитель для мороженого. Джемы.">джемы
+              <input type="checkbox" class="visually-hidden" name="jam-ice" aria-label="Выбирите наполнитель для мороженого. Джемы.">
+              <span class ="check-indicator"></span>
+              джемы
             </label>
           </div>
         </fieldset>
 
         <button class="filter-button btn-null" type="submit" aria-label="Применить фильтр поиска">Применить</button>
-      </fieldset>
+
     </form>
 
   </section>
