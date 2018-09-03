@@ -706,7 +706,38 @@ input[type="search"] {
   line-height: 18px;
   font-weight: 500;
   color:#ffffff;
+
 }
+
+.form-sort {
+  margin: 0;
+  padding: 0;
+  margin-left: 27px;
+  border: 1px solid saddlebrown;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.form-select,
+.form-price,
+.form-fat,
+.form-ice-with {
+  margin: 0;
+  padding: 0;
+}
+
+.form-select {
+  max-width: 194px;
+  border: 1px solid black;
+}
+
+.form-price {
+  border: 1px solid black;
+  max-width: 220px;
+}
+
+
 .form-style {
   font-size: 14px;
   line-height: 16px;
@@ -1243,8 +1274,11 @@ a.quick-view {
   height: 32px;
   background-image: url("../img/twitter.svg");
   opacity: 0.8;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  /*border: 2px solid rgba(255, 255, 255, 0.5);*/
   border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5), inset 0 0 0 2px rgba(255,255,255,0.5);
+  top:4px;
+  left: 0;
 }
 
 .instagram::before {
@@ -1256,8 +1290,11 @@ a.quick-view {
   height: 32px;
   background-image: url("../img/instagram.svg");
   opacity: 0.8;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  /*border: 2px solid rgba(255, 255, 255, 0.5);*/
   border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5), inset 0 0 0 2px rgba(255,255,255,0.5);
+  top:4px;
+  left: 0
 }
 
 .facebook::before {
@@ -1269,8 +1306,11 @@ a.quick-view {
   height: 32px;
   background-image: url("../img/fb.svg");
   opacity: 0.8;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  /*border: 2px solid rgba(255, 255, 255, 0.5);*/
   border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5), inset 0 0 0 2px rgba(255,255,255,0.5);
+  top:4px;
+  left: 0
 }
 
 .vkontakte::before {
@@ -1282,8 +1322,11 @@ a.quick-view {
   height: 32px;
   background-image: url("../img/vk.svg");
   opacity: 0.8;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  /*border: 2px solid rgba(255, 255, 255, 0.5);*/
   border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5), inset 0 0 0 2px rgba(255,255,255,0.5);
+  top:4px;
+  left: 0
 }
 
 .twitter:hover::before,
@@ -1294,34 +1337,33 @@ a.quick-view {
 .instagram:focus::before,
 .facebook:focus::before,
 .vkontakte:focus::before{
-  opacity: 1;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  /*opacity: 1;
+  border: 2px solid rgba(255, 255, 255, 0.7);*/
   border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.7), inset 0 0 0 1px rgba(255,255,255,0.6);
+  opacity: 1;
 }
 
 .twitter:active::before {
-  border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   background-image: url("../img/tw-active.svg");
-  box-shadow: inset 0 2px 1px 0 rgba(136, 136, 136, 0.4);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.7), inset 0 2px 1px rgba(136, 136, 136, 0.4);
 }
 .instagram:active::before {
-  border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   background-image: url("../img/inst-active.svg");
-  box-shadow: inset 0 2px 1px 0 rgba(136, 136, 136, 0.4);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.7), inset 0 2px 1px rgba(136, 136, 136, 0.4);
+
 }
 .facebook:active::before {
-  border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   background-image: url("../img/fb-active.svg");
-  box-shadow: inset 0 2px 1px 0 rgba(136, 136, 136, 0.4);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.7), inset 0 2px 1px rgba(136, 136, 136, 0.4);;
 }
 .vkontakte:active::before {
-  border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
- background-image: url("../img/vk-active.svg");
-  box-shadow: inset 0 2px 1px 0 rgba(136, 136, 136, 0.4);
+  background-image: url("../img/vk-active.svg");
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.7), inset 0 2px 1px rgba(136, 136, 136, 0.4);
 }
 
 .about-production-items {
@@ -1445,4 +1487,5 @@ a.quick-view {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
 

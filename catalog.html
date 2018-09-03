@@ -91,9 +91,11 @@
 
     <!-- Тут форма фильтров-->
     <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset>
+
+      <fieldset class="form-sort">
+
         <legend class="visually-hidden">Сортировка мороженого</legend>
-        <label class="form-style" aria-label="Сортировка мороженого">Сортировка:
+        <label class="form-style form-select" aria-label="Сортировка мороженого">Сортировка:
             <select class="background-filters" name="sort" id="sort" class="select">
               <option value="popular">По популярности</option>
               <option value="popular-price">По цене</option>
@@ -101,16 +103,16 @@
         </label>
 
 
-        <fieldset>
+        <fieldset class="form-price">
           <legend class="visually-hidden"> Цена:</legend>
           <label class="form-style" aria-label="Выбирите цену мороженного"> Цена: 100 руб.- 500 руб.
-            <span></span><div class="background-filters">Тут будет ползунок</div><span></span>
+            <span></span><div class="background-filters"></div><span></span>
               <input type="number" class="visually-hidden" name="price"  value="100"><span></span>
               <input type="number" class="visually-hidden" name="price"  value="500">
           </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-fat">
           <legend class="visually-hidden" aria-label="Выбирите жирность мороженого">Жирность</legend>
           <p class="form-style" >Жирность:</p>
           <div class="background-filters">
@@ -129,7 +131,7 @@
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-ice-with">
           <legend class="visually-hidden">Наполнители</legend>
           <p class="form-style" aria-label="Выбирите наполнитель для мороженого">Наполнители:</p>
           <div class="background-filters">
