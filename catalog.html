@@ -49,8 +49,30 @@
       <!--Поле входа -->
       <ul class="user-navigation-items">
         <li class="login-link">
-          <a href="login.html" class="enter-button" aria-label="Вход в профиль">
+          <a href="login.html" class="login login-modal" aria-label="Вход в профиль">
             Вход</a> <!-- спан для иконки-->
+          <section class="modal">
+            <h3 class="visually-hidden">Форма входа</h3>
+            <!-- тут должна быть объединяющая форма входа -->
+            <form class="user-login" action="https://echo.htmlacademy.ru" method="post">
+              <label><span class="visually-hidden">Электронная почта</span>
+                <input type="email" class="input-field" name="user-email" placeholder="Электронная почта">
+              </label>
+              <label><span class="visually-hidden">Пароль</span>
+                <input type="password" class="input-field" placeholder="Пароль">
+              </label>
+              <div class="container-enter">
+                <button type="submit" class="btn btn-null btn-enter">Войти</button>
+
+                <ul class="login-new-items">
+                  <li><a href="#" class="a-black" aria-label="Восстановить пароль">Забыли пароль?</a></li>
+                  <li><a href="#" class="a-black" aria-label="Зарегистрироваться">Новая регистрация</a></li>
+                </ul>
+
+              </div>
+            </form>
+          </section>
+
         </li>
       </ul>
 
@@ -62,7 +84,7 @@
     </ul>
     </div>
   </nav>
-    <!-- Режим работы -->
+  <!-- Режим работы -->
   <section class="open-close">
     <h3 class="visually-hidden" > Режим работы магазина </h3>
     <p class="header-contacts" aria-label="Мы работаем для Вас ежедневно с 10 до 20">
@@ -531,3 +553,49 @@
 <script></script>
 </body>
 </html>
+
+<section class="shopping-cart" aria-label="Корзина покупок." >
+  <h3 class="visually-hidden">Корзина покупок</h3>
+  <table class="cart-table">
+    <tr>
+      <!-- <td class="delete-item" aria-label="Удалить выбранное мороженое"></td>-->
+      <td class="table-ice">
+        <a href="#">
+          <img src="img/ice1.jpg" class="ice-in-catalog" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+        </a>
+      </td>
+
+      <td class="table-ice-name">
+        <a href="#" class="ice-name a-black"> Пломбир с апельсиновым джемом </a>
+      </td>
+      <td class="table-ice-mass">1,5кг ×</td>
+
+      <td class="table-ice-price"><span>200 руб.</span></td>
+      <td class="table-ice-total">300 руб.</td>
+    </tr>
+
+    <tr>
+      <!--  <td class="delete-item" aria-label="Удалить выбранное мороженое"></td>-->
+      <td class="table-ice">
+        <a href="#">
+          <img src="img/ice2.jpg" class="ice-in-catalog" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+        </a>
+      </td>
+      <td class="table-ice-name">
+        <a href="#" class="ice-name a-black"> Клубничный пломбир с присыпкой из белого шоколада</a>
+      </td>
+      <td class="table-ice-mass">1,5кг ×</td>
+
+      <td class="table-ice-price"><span>300 руб.</span></td>
+      <td class="table-ice-total">450 руб.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+
+      <td class="total" colspan="2">Итого: 750 руб.</td>
+
+    </tr>
+  </table>
+  <a href="#" class="btn btn-issue">Оформить заказ</a>
+</section>
