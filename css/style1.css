@@ -607,20 +607,36 @@ li.second-stroke {
 .blog-link {
   margin: 0;
   padding: 0;
-  width: 285px;
+  width: 281px;
   padding-bottom: 83px;
   margin-left: 19px;
-
 }
+
+.blog-link a,
+.blog-link a:hover,
+.blog-link a:focus,
+.blog-link a:active{
+  border:none;
+}
+
 .blog {
   display: inline-block;
   font-weight: 700;
-  border-bottom: 2px solid #323232;
 }
 
-.blog-link a:not(:first-child) {
+.blog-span:not(:first-child) {
   padding-left: 1px;
 }
+
+.blog-span{
+  border-bottom: 2px solid #353535;
+}
+.a-black:hover .blog-span,
+.blog-link a:focus .blog-span,
+.blog-link a:active .blog-span {
+  border-bottom: 2px solid rgba(236,89,60,0.3);
+}
+
 
 
 .main-subscription-form {
