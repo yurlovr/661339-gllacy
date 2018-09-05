@@ -12,7 +12,6 @@ body { /* Общие стили для боди*/
   flex-direction: column;
   align-items: center;*/
   margin: auto;
-  border: 1px dotted black;
 }
 
 .header-site-navigation-items, /*Удаляем маркеры у списка*/
@@ -793,7 +792,7 @@ li.second-stroke {
   margin: 0;
   padding: 0;
   margin-left: 27px;
-  border: 1px solid saddlebrown;
+  /*border: 1px solid saddlebrown;*/
 }
 
 .form-select,
@@ -810,7 +809,7 @@ li.second-stroke {
   width: 194px;
   margin-right: 14px;
   margin-bottom: 15px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .select {
@@ -839,7 +838,7 @@ li.second-stroke {
 }
 
 .form-price {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 220px;
   margin-right: 14px;
 }
@@ -1044,8 +1043,7 @@ label.min-price {
 
 
 .filter-form fieldset{
-
-  /*border:none;*/
+  border:none;
 }
 
 .filter-button {
@@ -1359,7 +1357,7 @@ a.quick-view {
 .container-features {
   margin: 0;
   padding: 0;
-  border: 1px solid darkorchid;
+  /*border: 1px solid darkorchid;*/
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -1389,7 +1387,7 @@ a.quick-view {
   margin-top: 40px;
   margin-left: 27px;
   margin-right: 27px;
-  border: 1px solid darkred;
+  /*border: 1px solid darkred;*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1397,7 +1395,7 @@ a.quick-view {
 
 .catalog-item {
   width: 267px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   position: relative;
 
 }
@@ -1405,7 +1403,7 @@ a.quick-view {
 .action-items {
   margin: 0;
   padding: 0;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   display: flex;
   justify-content: space-between;
   margin-top: 41px;
@@ -1505,7 +1503,7 @@ a.quick-view {
   margin: 0;
   padding: 0;
   display: flex;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   align-self: stretch;
   justify-content: space-between;
   margin-top: 36px;
@@ -1638,7 +1636,7 @@ a.quick-view {
   margin: 0;
   padding: 0;
   display: flex;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: 306px;
@@ -1681,7 +1679,7 @@ a.quick-view {
 
 
 .page-header {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   align-self: stretch;
   display: flex;
  justify-content: flex-start;
@@ -1702,10 +1700,8 @@ a.quick-view {
 }*/
 
 .page-header-navigation {
-  border: 1px solid darkblue;
+  /*border: 1px solid darkblue;*/
   display: flex;
-
-
 }
 
 .header-site-navigation-items { /*Каталог Доставка о компании*/
@@ -1715,11 +1711,11 @@ a.quick-view {
   /*margin-left: 24px;*/
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid limegreen;
+  /*border: 1px solid limegreen;*/
 }
 
 .container-user-menu {
-  border: 1px solid coral;
+  /*border: 1px solid coral;*/
   display: flex;
   margin-left: 151px;
 }
@@ -1762,12 +1758,13 @@ a.quick-view {
 .page-header-catalog::before {
   position: absolute;
   content: "";
-  width: 1200px;
+  width: 500%;
   height: 640px;
   background-image: url("../img/background/catalog-light.png");
+  background-repeat: repeat;
   z-index: -1;
   top: 0;
-  left: 0;
+  left: -350px;
 }
 
 .shopping-cart {
