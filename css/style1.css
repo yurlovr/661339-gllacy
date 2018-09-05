@@ -108,21 +108,24 @@ a { /* стили для всех ссылок кроме лого сайта и
 }
 
 .header-site-navigation-items {
-  min-width: 550px;
+
 }
 .header-site-navigation-item a { /*Обычное состояние каталог досьавка о компании*/
   display: inline-block;
   margin: 0;
   margin-right: 27px;
-  margin-left: 27px;
+  /*margin-left: 27px;*/
 
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
   margin-top: 9px;
 
   vertical-align: middle;
   min-width: 50px;
   border-bottom: 1px solid rgba(255,255,255,0.2);
+}
 
+.header-site-navigation-item a:last-child {
+  padding-left: 1px;
 }
 
 .header-site-navigation-item > a:hover, /* Наведение на каталог*/
@@ -341,14 +344,27 @@ a { /* стили для всех ссылок кроме лого сайта и
 .header-contacts {
   font-weight: 700;
   margin: 0; /*********/
-  margin-bottom: 8px;
+  margin-left: 14px;
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
+
+.header-contacts.time-work {
+  margin-left: 28px;
+}
+
 .tel {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.slider-items {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 .slider-info {
   font-size: 60px;
   line-height: 60px;
@@ -360,16 +376,17 @@ a { /* стили для всех ссылок кроме лого сайта и
 }
 
 .slider-btn-item{
-  width: 19px;
-  height: 19px;
-  border: 1px solid #ffffff;
+  width: 20.5px;
+  height: 20.5px;
+  margin-right: 8px;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-btn-item:hover:not(.current-slide),
 .slider-btn-item:focus:not(.current-slide){
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   background-color: rgba(248,247,244,0.4);
 }
 .slider-btn-item:active,
@@ -398,6 +415,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   line-height: 21.5px;
   font-weight: 700;
   color: #ffffff;
+  padding-bottom: 4px;
   border-radius: 15px;
   background-image: url("../img/background/background-raspb.jpg");
   /*background-repeat: no-repeat;*/
@@ -410,9 +428,9 @@ a { /* стили для всех ссылок кроме лого сайта и
 .action-item h3 {
   font-size: 35px;
   line-height: 41px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-top: 23px;
+  margin-left: 19px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .action-item:last-child {
@@ -420,10 +438,11 @@ a { /* стили для всех ссылок кроме лого сайта и
 }
 
 .action-description {
-  min-width: 526px;
+  max-width: 525px;
+  margin-top: 0;
   margin-left: 20px;
   margin-bottom: 45px;
-
+  padding-top: 2px;
 }
 
 .action-item a {
@@ -432,13 +451,14 @@ a { /* стили для всех ссылок кроме лого сайта и
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  margin-right: 21px;
+  margin-right: 23px;
+  margin-bottom: 19px;
+  margin-top: 2px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-right: 22px;
+  padding-left: 18px;
   float: right;
-  margin-bottom: 24px;
-  padding-top: 15px;
-  padding-bottom: 14px;
-  padding-right: 23px;
-  padding-left: 21px;
 
 }
 
@@ -455,12 +475,24 @@ a { /* стили для всех ссылок кроме лого сайта и
   font-weight: 700;
   color: #ffffff;
   position: absolute;
-  top: 214px;
+  top: 209px;
   left: 0;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 .catalog-item-price span {
-  font-size: 40px;
+  font-size: 29px;
+  padding-left: 36px;
+}
+.catalog-item-price span::before {
+  position: absolute;
+  content: "";
+  margin: 0;
+  padding: 0;
+  width: 31px;
+  height: 36px;
+  top: 6px;
+  left: 80px;
+  background-image: url("../img/ruble.svg");
 }
 
 .catalog-items h2 {
@@ -469,7 +501,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -479,7 +511,8 @@ a { /* стили для всех ссылок кроме лого сайта и
 
   background-image: url("../img/background/Background-waffle.jpg");
   background-repeat: repeat;
-  padding-bottom: 26px;
+  padding-bottom: 14px;
+  margin-bottom: 5px;
 }
 
 .main-features h1,
@@ -493,8 +526,11 @@ a { /* стили для всех ссылок кроме лого сайта и
   margin: 0;
   padding:0;
   margin-left: 21px;
-  margin-bottom: 26px;
-  padding-top: 20px;
+  margin-bottom: 21px;
+  padding-top: 25px;
+}
+.main-features-h1 {
+  letter-spacing: 0.2px;
 }
 
 .main-features-items {
@@ -540,7 +576,7 @@ li.second-stroke {
   width: 49px;
   height: 49px;
   background-image: url("../img/ice-cream.svg");
-  top: -10px;
+  top: -13px;
   left: 0;
 }
 
@@ -552,7 +588,7 @@ li.second-stroke {
   width: 49px;
   height: 49px;
   background-image: url("../img/eco.svg");
-  top: -10px;
+  top: -6px;
   left: 0;
 }
 
@@ -564,7 +600,7 @@ li.second-stroke {
   width: 49px;
   height: 49px;
   background-image: url("../img/cow.svg");
-  top: -10px;
+  top: -13px;
   left: 0;
 }
 
@@ -576,7 +612,7 @@ li.second-stroke {
   width: 49px;
   height: 49px;
   background-image: url("../img/thermometer.svg");
-  top: -10px;
+  top: -6px;
   left: 0;
 }
 
@@ -587,9 +623,8 @@ li.second-stroke {
 }
 
 .main-blog {
-
   background-image: url("../img/background/background-blog.jpg");
-  background-position: -50px 565px;
+  background-position: -52px 566px;
   margin: 0;
   padding: 0;
   width: 560px;
@@ -600,14 +635,16 @@ li.second-stroke {
   padding: 0;
   font-weight: 500;
   margin-left: 20px;
-  margin-top: 19px;
+  margin-top: 23px;
+  padding-bottom: 2px;
 }
 
 .blog-link {
   margin: 0;
   padding: 0;
   width: 281px;
-  padding-bottom: 83px;
+  padding-top: 2px;
+  padding-bottom: 81px;
   margin-left: 19px;
 }
 
@@ -628,7 +665,8 @@ li.second-stroke {
 }
 
 .blog-span{
-  border-bottom: 2px solid #353535;
+  /*border-bottom: 2px solid #353535;*/
+  text-decoration: underline;
 }
 .a-black:hover .blog-span,
 .blog-link a:focus .blog-span,
@@ -642,7 +680,7 @@ li.second-stroke {
   background-image: url("../img/bg-post.svg");
   max-width: 549px;
   padding-top: 4px;
-  padding-bottom: 5px;
+  padding-bottom: 0;
   padding-left: 6px;
   padding-right: 5px;
 }
@@ -668,14 +706,16 @@ li.second-stroke {
   line-height: 24px;
   font-weight: 700;
   color: #323232;
+  margin-top: 7px;
   margin-left: 20px;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   padding-left: 15px;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 9px;
-  width: 340px;
+  width: 350px;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
+  letter-spacing: 1px;
 }
 .subscription-mail::placeholder {
   font-size: 14px;
@@ -706,10 +746,10 @@ li.second-stroke {
 
 
 .btn-send {
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 11px;
   margin-left: 11px;
 
 }
@@ -755,14 +795,6 @@ li.second-stroke {
   padding-top: 16px;
   padding-bottom: 15px;
   border: 1px solid rgba(178,178,178,0.52);
-}
-
-
-
-.feedback-contacts {
-  font-size: 14px;
-  line-height: 20px;
-  background-color: #fdfdfd;
 }
 
 .shop-adress,
@@ -1144,11 +1176,7 @@ label.min-price {
   font-weight: 700;
 }
 
-.footer-copyright {
-  font-size: 12px;
-  line-height: 18px;
-  color: #fefefe;
-}
+
 
 
 .user-login {
@@ -1207,7 +1235,10 @@ input[type="password"].input-field {
   background-color: #ffffff;
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-  border-radius: 50px;
+  border-top-left-radius: 93px;
+  border-bottom-left-radius: 95px;
+  border-top-right-radius: 93px;
+  border-bottom-right-radius: 95px;
   display: inline-block;
 }
 
@@ -1272,6 +1303,7 @@ a.quick-view {
 
 .ice-in-catalog {
   border-radius: 50%;
+  margin-bottom: -3px;
 }
 
 .catalog-navigation {
@@ -1342,14 +1374,14 @@ a.quick-view {
 }
 
 .slider-info+a {
-  font-size: 32px;
+  font-size: 31px;
   line-height: 44px;
   font-weight:700;
 }
 
 
 .action-ice {
-  margin-bottom: 40px;
+  margin-bottom: 3px;
 }
 
 
@@ -1366,6 +1398,7 @@ a.quick-view {
 
 .main-features {
   margin-left: 27px;
+  margin-top: -5px;
   margin-bottom: 40px;
   margin-right: 27px;
   border-radius: 15px;
@@ -1384,7 +1417,7 @@ a.quick-view {
 .catalog-items {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-left: 27px;
   margin-right: 27px;
   /*border: 1px solid darkred;*/
@@ -1403,10 +1436,11 @@ a.quick-view {
 .action-items {
   margin: 0;
   padding: 0;
+  padding-bottom: 4px;
   /*border: 1px solid yellow;*/
   display: flex;
   justify-content: space-between;
-  margin-top: 41px;
+  /*margin-top: 41px;*/
 }
 
 .action-item {
@@ -1425,12 +1459,11 @@ a.quick-view {
 .slider-btn-items {
   display: flex;
   justify-content: flex-start;
-  margin-top: -50px;
+  margin-top: -59px;
+  margin-bottom: 59px;
+  padding-left: 28px;
 }
 
-.slider-btn-item {
-  margin-right: 8px;
-}
 
 .map {
   display: flex;
@@ -1453,24 +1486,27 @@ a.quick-view {
 
 .feedback-contacts {
   width: 302px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fdfdfd;
   align-self: flex-end;
   position: absolute;
   border-radius: 15px;
-  top: 62px;
+  top: 64px;
   right: 27px;
 }
 
-
 .contacts {
   width: 148px;
-  margin-bottom: 9px;
+  margin-top: 28px;
+  margin-bottom: 1px;
 }
 
 .shop-adress  {
   padding-left: 25px;
   width: 225px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
 
 
@@ -1479,7 +1515,7 @@ a.quick-view {
 }
 
 .phone-shop {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 .phone-time-work {
   padding-left: 25px;
@@ -1488,15 +1524,14 @@ a.quick-view {
 }
 .btn-feedback {
   display:block;
-  margin-bottom: 31px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 28px;
-  padding-right: 28px;
-  text-align: center;
   width: 197px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 30px;
+  padding-left: 25px;
+  padding-top: 8px;
+  padding-right: 21px;
+  padding-bottom: 11px;
 }
 
 .page-footer {
@@ -1506,8 +1541,9 @@ a.quick-view {
   /*border: 1px solid red;*/
   align-self: stretch;
   justify-content: space-between;
-  margin-top: 36px;
-  margin-right: 27px;
+  /*margin-top: 36px;*/
+  margin-right: 26px;
+  padding-top: 7px;
 }
 
 .page-footer-catalog {
@@ -1517,7 +1553,8 @@ a.quick-view {
 .social-btn-items {
   margin: 0;
   padding: 0;
-  margin-left: 28px;
+  margin-left: 31px;
+  margin-top: 28px;
   display: flex;
 }
 
@@ -1635,6 +1672,8 @@ a.quick-view {
 .about-production-items {
   margin: 0;
   padding: 0;
+  margin-top: 29px;
+  padding-left: 4px;
   display: flex;
   /*border: 1px solid yellow;*/
   align-items: flex-start;
@@ -1642,17 +1681,26 @@ a.quick-view {
   max-width: 306px;
 }
 
+.about-production-items li {
+  margin-bottom: 9px;
+  margin-top: -5px;
+}
+
 .about-production-items li:first-child {
   margin-right: 32px;
+  margin-bottom: 0;
+  margin-top: -3px;
 }
 
 .about-production-items li:last-child {
-  margin-left: 44px;
+  margin-left: 45px;
 }
 
-.about-production-items li {
-  margin-bottom: 9px;
+.about-production-items li.docs {
+  margin-top: -3px;
 }
+
+
 
 .about-production-items li.heart {
   position: relative;
@@ -1665,17 +1713,23 @@ a.quick-view {
   padding: 0;
   width: 15px;
   height: 13px;
-  top: 2px;
-  left: -20px;
+  top: 3px;
+  left: -21px;
   background-image: url("../img/heart.svg");
 }
 
 .footer-copyright-link {
   display: block;
-  margin-bottom: 8px;
+  padding-right: 1px;
 }
 
-
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+  margin-top: 11px;
+  margin-bottom: 0;
+}
 
 
 .page-header {
@@ -1705,9 +1759,10 @@ a.quick-view {
 }
 
 .header-site-navigation-items { /*Каталог Доставка о компании*/
+  min-width: 550px;
   padding: 0;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 21px;
   /*margin-left: 24px;*/
   display: flex;
   flex-wrap: wrap;
@@ -1717,18 +1772,19 @@ a.quick-view {
 .container-user-menu {
   /*border: 1px solid coral;*/
   display: flex;
-  margin-left: 151px;
+  margin-left: 155px;
 }
 
 .open-close {
   position: absolute;
-  top:75px;
-  right: 27px;
+  top:70px;
+  right: 25px;
 }
 
 .slider-item {
   z-index: 1;
-  margin-top: -110px;
+  margin-top: -109px;
+  margin-left: 2px;
 }
 
 .slider-item {
@@ -1738,7 +1794,7 @@ a.quick-view {
 }
 
 .slider-info {
-  margin-top: -490px;
+  margin-top: -489px;
   text-align: center;
   width: 670px;
   margin-bottom: 30px;
@@ -1746,10 +1802,14 @@ a.quick-view {
 
 .slider-item a {
   width: 198px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  padding-right: 36px;
+  padding-left: 36px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .page-header-catalog {
