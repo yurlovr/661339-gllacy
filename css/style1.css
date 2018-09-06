@@ -106,30 +106,28 @@ a { /* стили для всех ссылок кроме лого сайта и
   font-weight: 500;
   color: #ffffff;
 }
-
-.header-site-navigation-items {
-
+.header-site-navigation-item {
+  margin-right: 14px;
 }
+
 .header-site-navigation-item a { /*Обычное состояние каталог досьавка о компании*/
   display: inline-block;
   margin: 0;
-  margin-right: 27px;
-  /*margin-left: 27px;*/
-
-  /*margin-bottom: 10px;*/
+  margin-right: 14px;
   margin-top: 9px;
-
+  padding-left: 0;
+  padding-right: 0;
   vertical-align: middle;
   min-width: 50px;
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.header-site-navigation-item a:last-child {
-  padding-left: 1px;
+.header-site-navigation-item:last-child a {
+  margin-right: 0;
 }
 
-.header-site-navigation-item > a:hover, /* Наведение на каталог*/
-.header-site-navigation-item > a:focus {
+.header-site-navigation-items .header-site-navigation-item > a:hover, /* Наведение на каталог*/
+.header-site-navigation-items .header-site-navigation-item > a:focus {
   color: #323232;
   background-color: #f8f7f4;
   border: 1px solid #ffffff;
@@ -142,8 +140,8 @@ a { /* стили для всех ссылок кроме лого сайта и
 
   margin-bottom:0;
   margin-top: 0;
-  margin-right: 12px;
-  margin-left: 13px;
+  margin-right: 0px;
+  margin-left: -15px;
 }
 
 .header-site-navigation-item > a:active {
@@ -170,7 +168,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   width: 21px;
   height: 19px;
   background-image: url("../img/enter-white.svg");
-  left: 18px;
+  left: 16px;
   top: 7px;
 }
 
@@ -185,9 +183,9 @@ a { /* стили для всех ссылок кроме лого сайта и
   position: relative;
   padding-left: 44px;
   padding-right: 17px;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-bottom: 9px;
-  border-radius: 50px;
+  border-radius: 25px;
   margin-top: 22px;
   margin-left: 10px;
 }
@@ -195,7 +193,7 @@ a { /* стили для всех ссылок кроме лого сайта и
 .cart-link-empty a {
   padding-left: 45px;
   padding-right: 17px;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-bottom: 9px;
   border-radius: 50px;
   margin-top: 22px;
@@ -211,7 +209,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   width: 21px;
   height: 20px;
   background-image: url("../img/basket.svg");
-  left: 18px;
+  left: 16px;
   top: 7px;
 }
 
@@ -1791,7 +1789,8 @@ a.quick-view {
   padding: 0;
   margin: 0;
   margin-top: 21px;
-  /*margin-left: 24px;*/
+  padding-left: 14px;
+  margin-left: -14px;
   display: flex;
   flex-wrap: wrap;
   /*border: 1px solid limegreen;*/
@@ -1813,6 +1812,14 @@ a.quick-view {
   z-index: 1;
   margin-top: -109px;
   margin-left: 2px;
+}
+
+.slider-item.second-slide {
+  margin-top: -87px;
+}
+
+.slider-item.third-slide {
+  margin-top: -82px;
 }
 
 .slider-item {
