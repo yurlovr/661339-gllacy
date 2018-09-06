@@ -1414,9 +1414,10 @@ a.quick-view {
 
 .main-features {
   margin-left: 27px;
-  margin-top: -5px;
+  margin-top: -3px;
   margin-bottom: 40px;
   margin-right: 27px;
+  padding-bottom: 14px;
   border-radius: 15px;
 }
 
@@ -1486,6 +1487,7 @@ a.quick-view {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 1px;
 }
 
 .map::before {
@@ -1498,6 +1500,16 @@ a.quick-view {
   background-image: url("../img/pin.svg");
   left: 266px;
   top: 139px;
+}
+
+.map::after {
+  position: absolute;
+  content: "";
+  width: 182px;
+  height: 110px;
+  top: 171px;
+  left: 302px;
+  background-image: url("../img/shadow.png");
 }
 
 .feedback-contacts {
