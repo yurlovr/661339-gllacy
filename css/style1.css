@@ -150,13 +150,19 @@ a { /* стили для всех ссылок кроме лого сайта и
   border: none;
 }
 
+li.catalog-navigation-current {
+  padding-right: 0;
+  margin-left: -15px;
+  margin-right: 16px;
+}
+
 .catalog-navigation-current a {
   display: inline-block;
   padding-left: 14px;
   padding-right: 13px;
   padding-top: 9px;
-  padding-bottom: 10px;
-  border-radius: 50px;
+  padding-bottom: 8px;
+  border-radius: 25px;
   background-color: #d07058;
 }
 
@@ -346,6 +352,10 @@ a { /* стили для всех ссылок кроме лого сайта и
   margin-left: 14px;
   margin-top: 3px;
   margin-bottom: 5px;
+}
+
+.header-contacts.header-contacts-catalog {
+  margin-left: 29px;
 }
 
 .header-contacts.time-work {
@@ -1797,9 +1807,12 @@ a.quick-view {
 }
 
 .container-user-menu {
-  /*border: 1px solid coral;*/
   display: flex;
   margin-left: 155px;
+}
+
+.container-user-menu.container-user-menu-catalog {
+  margin-left: 138px;
 }
 
 .open-close {
