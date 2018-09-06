@@ -328,18 +328,19 @@ a { /* стили для всех ссылок кроме лого сайта и
   margin: 0;
   padding: 0;
   margin-left: 27px;
-  margin-top: 28px;
+  margin-top: 20px;
   display: flex;
   font-weight: 400;
 }
 .breadcrumbs-item span {
-  margin-right: 9px;
+  margin-right: 3px;
 }
 
 .breadcrumbs-item a:not(.current-breadcrumbs) {
   margin-right: 9px;
   border-bottom: 1px solid rgba(253,254,254,0.2);
 }
+
 
 .header-contacts {
   font-weight: 700;
@@ -493,6 +494,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   top: 6px;
   left: 80px;
   background-image: url("../img/ruble.svg");
+
 }
 
 .catalog-items h2 {
@@ -807,9 +809,9 @@ li.second-stroke {
 .page-title {
   margin: 0;
   padding: 0;
-  margin-top: 8px;
+  margin-top: 4px;
   margin-left: 27px;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -848,10 +850,11 @@ li.second-stroke {
   margin: 0;
   padding: 0;
   min-width: 194px;
-  padding-left: 16px;
-  padding-top: 12px;
+  padding-left: 13px;
+  padding-top: 9px;
   padding-bottom: 6px;
   margin-top: 6px;
+  letter-spacing: 1px;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.2);
   color: #ffffff;
@@ -872,7 +875,7 @@ li.second-stroke {
 .form-price {
   /*border: 1px solid black;*/
   width: 220px;
-  margin-right: 14px;
+  margin-right: 9px;
 }
 
 .form-price legend {
@@ -882,15 +885,16 @@ li.second-stroke {
 }
 
 .range-filter {
-  margin-top: 1px;
+  margin-top: 0;
+  margin-right: 3px;
 }
 
 .range-controls {
   position: relative;
   height: 21px;
   padding-top: 16px;
-  padding-right: 22px;
-  padding-left: 22px;
+  padding-right: 24px;
+  padding-left: 20px;
   margin-bottom: 15px;
   background-color: rgba(255,255,255,0.2);
   border-radius: 20px;
@@ -905,7 +909,7 @@ li.second-stroke {
   height: 4px;
   background-color: #f8f7f4;
   width: 107px;
-  margin-left: 38px;
+  margin-left: 23px;
 }
 
 .range-controls .toggle {
@@ -922,11 +926,11 @@ li.second-stroke {
 }
 
 .range-controls .toggle-min {
-  left: 43px;
+  left: 33px;
 }
 
 .range-controls .toggle-max {
-  left: 158px;
+  left: 131px;
 }
 
 
@@ -944,7 +948,7 @@ li.second-stroke {
   padding: 0;
   width: 57px;
   height: 20px;
-  background-color: #849d8f;
+  background-color: #97aca0;
   border: none;
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
@@ -961,25 +965,27 @@ li.second-stroke {
 }
 
 label.min-price {
-  padding-left: 16px;
+  padding-left: 12px;
+  padding-right: 4px;
 }
 
 .fat {
   position: relative;
   cursor: pointer;
-  padding-left: 32px;
-  padding-right: 16px;
+  padding-left: 35px;
+  padding-right: 10px;
 }
 
 .form-fat p {
   margin-top: 2px;
+  padding-left: 12px;
 }
 
 .fat input[type="radio"] +
 .radio-indicator {
   position: absolute;
   top: -3px;
-  left: 0;
+  left: 1px;
   width: 25px;
   height: 25px;
   opacity: 0.8;
@@ -1005,19 +1011,24 @@ label.min-price {
   background-image: url("../img/radio-on.svg");
 }
 
+.filters {
+  margin-bottom: 39px;
+}
+
 .background-filters {
   margin: 0;
   padding: 0;
   height: 18px;
-  padding-left: 14px;
-  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 2px;
+  padding-top: 9px;
   padding-bottom: 9px;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.2);
 }
 
 .form-ice-with {
-  margin-right: 14px;
+  margin-right: 11px;
 }
 
 .form-ice-with p {
@@ -1083,8 +1094,8 @@ label.min-price {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  padding-left: 29px;
-  padding-right: 27px;
+  padding-left: 26px;
+  padding-right: 25px;
   padding-top: 7px;
   padding-bottom: 8px;
 
@@ -1109,15 +1120,19 @@ label.min-price {
 }
 
 .pagination-items {
+  min-width: 180px;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
-  margin-right: 27px;
+  margin-top: 42px;
+  margin-right: 13px;
   display: flex;
   justify-content: flex-end;
   line-height: 18px;
   font-weight: 500;
-  position: relative;
+}
+
+.pagination-items li {
+ width: 30px;
 }
 
 .pagination-item-previous {
@@ -1165,6 +1180,7 @@ label.min-price {
   margin-left: 27px;
   margin-right: 27px;
   margin-top: 30px;
+  margin-bottom: -17px;
   border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
