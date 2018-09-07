@@ -445,7 +445,7 @@ li.catalog-navigation-current {
   padding-bottom: 4px;
   border-radius: 15px;
   background-image: url("../img/background/background-raspb.jpg");
-  background-position: -54px;
+  background-position: -50px;
 }
 
 .action-item:first-child {
@@ -462,6 +462,7 @@ li.catalog-navigation-current {
 
 .action-item:last-child {
   background-image: url("../img/background/background-choco.jpg");
+  background-position: 612px 346px;
 }
 
 .action-description {
@@ -1691,6 +1692,7 @@ a.quick-view {
   justify-content: space-between;
   /*margin-top: 36px;*/
   margin-right: 26px;
+  margin-bottom: 25px;
   padding-top: 7px;
 }
 
@@ -1961,13 +1963,11 @@ a.quick-view {
   margin-left: 2px;
 }
 
-.slider-item.second-slide {
-  margin-top: -87px;
-}
 
-.slider-item.third-slide {
+
+/*.slider-item.third-slide {
   margin-top: -82px;
-}
+}*/
 
 .slider-item {
   display: -webkit-box;
@@ -2313,3 +2313,4 @@ a.quick-view {
   z-index: 1;
   display: none;
 }
+
