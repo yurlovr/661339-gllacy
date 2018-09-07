@@ -445,7 +445,7 @@ li.catalog-navigation-current {
   padding-bottom: 4px;
   border-radius: 15px;
   background-image: url("../img/background/background-raspb.jpg");
-  /*background-repeat: no-repeat;*/
+  background-position: -54px;
 }
 
 .action-item:first-child {
@@ -1493,7 +1493,6 @@ a.quick-view {
   font-weight:700;
 }
 
-
 .action-ice {
   margin-bottom: 1px;
 }
@@ -1860,7 +1859,7 @@ a.quick-view {
 }
 
 .about-production-items li:last-child {
-  margin-left: 45px;
+  margin-left: 44px;
 }
 
 .about-production-items li.docs {
@@ -1957,7 +1956,7 @@ a.quick-view {
 }
 
 .slider-item {
-  z-index: 1;
+  /*z-index: -1;*/
   margin-top: -109px;
   margin-left: 2px;
 }
