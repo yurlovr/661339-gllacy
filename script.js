@@ -71,6 +71,10 @@ function getChangeSlide(event) {
 
 }
 
+function getShowSubMenu(event) {
+  console.log('ok');
+}
+
 
 let buttonOpenSendForm = document.querySelector(".btn-feedback");
 buttonOpenSendForm.addEventListener('click',openFeedBack);
@@ -82,3 +86,6 @@ window.addEventListener("keydown", closeFeedBackEsc);
 
 let buttonSliderTarget = document.querySelector(".slider-btn-items");
 buttonSliderTarget.addEventListener('click',getChangeSlide);
+
+let searchField = document.querySelector('.search');
+searchField.addEventListener('mouseover',getShowSubMenu);

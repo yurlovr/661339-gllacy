@@ -1576,16 +1576,24 @@ a.quick-view {
   left: 46px;
 
   display: none;
+  z-index:1;
 }
 
 .catalog-item:hover .ice-container,
-.ice-container:focus .ice-container { /*как сделать появление кнопки и фона при переключении табом*/
+.ice-container:focus .ice-container {
   display: block;
 }
 
-.ice-container:hover a.quick-view,
-.ice-container:focus a.quick-view {
+
+.catalog-item:hover  a.quick-view,
+.catalog-item:focus a.quick-view {
   display: block;
+}
+
+.catalog-item:hover .item-link,
+.catalog-item:focus .item-link {
+  position: relative;
+  z-index: 3;
 }
 
 .ice-in-catalog {
@@ -2260,7 +2268,9 @@ a.quick-view {
   position: absolute;
 
   width: 539px;
-  height: 242px;
+  min-height: 221px;
+
+  padding-bottom: 21px;
 
   top:59px;
   left: -412px;
@@ -2284,9 +2294,6 @@ a.quick-view {
   font-size: 13px;
   line-height: 16px;
 }
-.cart-table span {
-  color:#999999;
-}
 
 .shopping-cart td {
   margin: 0;
@@ -2303,7 +2310,7 @@ a.quick-view {
   width:33px;
 
   padding-left: 42px;
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 .ice-in-catalog-cart {
@@ -2317,24 +2324,18 @@ a.quick-view {
   width: 200px;
 
   padding-left: 5px;
-  padding-top: 20px;
+  padding-top: 28px;
 }
 
-.table-ice-name > a {
+.shopping-cart .table-ice-name > a {
   border: none;
-}
-
-.shopping-cart .table-ice-name a {
-  display: block;
-
-  vertical-align: middle;
 }
 
 .shopping-cart .table-ice-mass {
   width: 41px;
 
   padding-left: 27px;
-  padding-top: 20px;
+  padding-top: 11px;
   color:#323232;
 }
 
@@ -2345,21 +2346,18 @@ a.quick-view {
 .shopping-cart .table-ice-price {
   width: 50px;
 
-  padding-top: 20px;
+  padding-top: 11px;
 }
 
 .shopping-cart .table-ice-price span {
   margin-left: 2px;
-}
-
-.shopping-cart .table-ice-price span {
-  margin-left: 2px;
+  color:#999999;
 }
 
 .cart-table .table-ice-total {
   width: 78px;
 
-  padding-top: 20px;
+  padding-top: 11px;
   padding-left: 20px;
 }
 
@@ -2372,7 +2370,7 @@ a.quick-view {
 .shopping-cart .total {
   min-width: 109px;
 
-  padding-top: 37px;
+  padding-top: 31px;
   padding-right: 14px;
 
   font-size: 15px;
@@ -2391,19 +2389,19 @@ a.quick-view {
   padding-bottom: 9px;
 }
 
-.shopping-cart .cart-table{
+.total {
   position: relative;
 }
 
-.shopping-cart tr:last-child::before {
+.total::before {
   position: absolute;
   content: "";
 
   width: 510px;
   height: 1px;
 
-  left: 15px;
-  top: 130px;
+  left: -362px;
+  top: 15px;
 
   border-top: 1px solid #cacac7;
 }
@@ -2423,6 +2421,14 @@ a.quick-view {
   left: 15px;
 
   background-image: url("../img/cross-small.svg");
+}
+
+.shopping-cart .first-stroke-table  td  {
+  padding-top: 21px;
+}
+
+.first-stroke-table .table-ice {
+  padding-top: 20px;
 }
 
 .modal-form-feedback {
