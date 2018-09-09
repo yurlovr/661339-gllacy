@@ -5,7 +5,7 @@
     <title>Магазин Глэйси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/stylepre.css"     rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -43,16 +43,18 @@
         <li>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 
-            <label class="search" aria-label="Поиск">
+            <div class="search" aria-label="Поиск">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
               <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
                 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981
                 11 6.5 11z"/>
             </svg>
-            <div class="search-field-container">
-              <input class="input-field input-field-search" type="search" name="search" placeholder="Что ищем?">
+            <div class="wrapper-show-search">
+              <label class="search-field-container">
+                <input class="input-field input-field-search" type="search" name="search" placeholder="Что ищем?">
+              </label>
             </div>
-          </label>
+          </div>
 
         </form>
         </li>
@@ -64,7 +66,7 @@
           <a  class="login login-modal" href="login.html" aria-label="Вход в профиль">
             Вход
           </a>
-
+          <div class="wrapper-modal">
           <section class="modal">
             <h3 class="visually-hidden">Форма входа</h3>
 
@@ -95,7 +97,7 @@
             </form>
 
           </section>
-
+          </div>
         </li>
       </ul>
 
@@ -104,6 +106,7 @@
       <li class="cart-link cart-link-empty">
         <a href="shop-cart.html"  aria-label="Корзина покупок">2 товара</a>
 
+       <div class="wrapper-cart">
         <section class="shopping-cart" aria-label="Корзина покупок." >
           <h3 class="visually-hidden">Корзина покупок</h3>
 
@@ -153,6 +156,7 @@
 
           <a class="btn btn-issue" href="#">Оформить заказ</a>
         </section>
+       </div>
 
       </li>
     </ul>
@@ -181,14 +185,14 @@
   <ul class="breadcrumbs">
     <li class="breadcrumbs-item">
       <a href="index.html">Главная </a>
-      <span>&#187</span>
+      <span>&#187;</span>
     </li>
     <li class="breadcrumbs-item">
-      <a href="catalog.html">Каталог</a>
-      <span>&#187</span>
+      <a href="#">Каталог</a>
+      <span>&#187;</span>
     </li>
     <li class="breadcrumbs-item">
-      <a class="current-breadcrumbs" href="catalog/creamy.html" aria-label="Вы находитесь в каталоге в разделе Сливочное мороженое">Сливочное</a>
+      <a class="current-breadcrumbs" href="catalog.html" aria-label="Вы находитесь в каталоге в разделе Сливочное мороженое">Сливочное</a>
     </li> <!-- Открывает карту мороженого-->
   </ul>
 
@@ -587,7 +591,7 @@
         </li>
         <li class="pagination-item">
           <a href="#" aria-label="Следующая страница">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg version="1.1" id="Layer_111" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	           width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
             <path fill="#f8f9f8" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
                 	c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
@@ -666,7 +670,7 @@
     </a>
     Сделано в
 
-    <a class="a-white" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано в HTML Academy ">HTML Academy</a> &#0169 2018
+    <a class="a-white" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано в HTML Academy ">HTML Academy</a> &copy; 2018
   </p>
 
 </footer>

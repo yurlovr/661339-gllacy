@@ -2,26 +2,20 @@
 
 function openFeedBack(event) {
   event.preventDefault();
-  let feedBackForm = document.querySelector(".modal-form-feedback");
-  let overlay = document.querySelector(".modal-overlay");
-  feedBackForm.style.display = "block";
+  feedBack.style.display = "block";
   overlay.style.display = "block";
 }
 
 function closeFeedBack(event) {
-  let feedBackForm = document.querySelector(".modal-form-feedback");
-  let overlay = document.querySelector(".modal-overlay");
-  feedBackForm.style.display = "none";
+  feedBack.style.display = "none";
   overlay.style.display = "none";
 }
 
 function closeFeedBackEsc(event) {
-  let feedBackForm = document.querySelector(".modal-form-feedback");
-  let overlay = document.querySelector(".modal-overlay");
   if (event.keyCode === 27) {
     event.preventDefault();
-    if (feedBackForm.style.display === "block") {
-      feedBackForm.style.display = "none";
+    if (feedBack.style.display === "block") {
+      feedBack.style.display = "none";
       overlay.style.display = "none";
     }
   }
@@ -71,10 +65,8 @@ function getChangeSlide(event) {
 
 }
 
-function getShowSubMenu(event) {
-  console.log('ok');
-}
-
+const feedBack = document.querySelector(".modal-form-feedback");
+const overlay = document.querySelector(".modal-overlay");
 
 let buttonOpenSendForm = document.querySelector(".btn-feedback");
 buttonOpenSendForm.addEventListener('click',openFeedBack);
@@ -87,5 +79,4 @@ window.addEventListener("keydown", closeFeedBackEsc);
 let buttonSliderTarget = document.querySelector(".slider-btn-items");
 buttonSliderTarget.addEventListener('click',getChangeSlide);
 
-let searchField = document.querySelector('.search');
-searchField.addEventListener('mouseover',getShowSubMenu);
+
