@@ -150,7 +150,6 @@ a { /* стили для всех ссылок кроме лого сайта и
   background-color: #f8f7f4;
   border: 1px solid #ffffff;
   border-radius: 50px;
-
 }
 
 .header-site-navigation-item > a:active {
@@ -303,7 +302,7 @@ li.catalog-navigation-current {
   padding-right: 14px;
   padding-bottom: 20px;
 
-  left: 13px; /*-322px;*/
+  left: 13px;
   top: 37px;
   background-color:#f8f7f4 ;
 
@@ -311,16 +310,11 @@ li.catalog-navigation-current {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 
-  /*display: none;*/
 }
-
-/*.search:hover .search-field-container,
-.search:focus .search-field-container{
-  display: block;
-}*/
 
 .search-field-container .input-field-search {
   min-width: 310px;
+  height: 44px;
 
   padding-top: 9px;
   padding-bottom: 9px;
@@ -809,6 +803,7 @@ li.second-stroke {
 
 .subscription-mail {
   width: 350px;
+  height: 24px;
 
   font-size: 16px;
   line-height: 24px;
@@ -842,7 +837,6 @@ li.second-stroke {
   font-family: "Roboto", Arial, sans-serif;
   color: #999999;
 
-  padding-bottom: 15px;
 }
 
 .subscription-mail::-ms-input-placeholder {
@@ -898,8 +892,6 @@ li.second-stroke {
   font-weight: 400;
   color: #999999;
   font-family: "Roboto", Arial, sans-serif;
-
-  padding-bottom: 15px;
 }
 
 .input-field::-ms-input-placeholder{
@@ -920,6 +912,8 @@ li.second-stroke {
 
 .input-field {
   min-width: 294px;
+  height: 24px;
+
 
   font-size: 16px;
   line-height: 24px;
@@ -1061,9 +1055,9 @@ li.second-stroke {
 
   height: 21px;
 
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-left: 20px;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-right: 24px;
 
   border-radius: 20px;
@@ -1092,7 +1086,7 @@ li.second-stroke {
 
   padding: 0;
 
-  top: 8px;
+  top: 6px;
   left: 0;
 
   border: 8px solid #ffffff;
@@ -1103,7 +1097,7 @@ li.second-stroke {
 
 .range-controls .toggle:hover,
 .range-controls .toggle:focus {
-  top: 6px;
+  top: 4px;
 
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -1147,6 +1141,7 @@ li.second-stroke {
   background-color: #97aca0;
   border: none;
 }
+
 
 label.min-price {
   padding-left: 12px;
@@ -1209,7 +1204,7 @@ label.min-price {
   height: 18px;
 
   padding-left: 12px;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-right: 2px;
   padding-bottom: 9px;
 
@@ -1627,14 +1622,17 @@ a.quick-view {
 }
 
 .catalog-navigation-items li {
-  padding-left: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-navigation-items a {
   margin: 0;
   padding:0;
+
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 8px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1644,8 +1642,16 @@ a.quick-view {
   border: none;
 }
 
+.catalog-navigation-items li:last-child a {
+  padding-bottom: 12px;
+}
+
 .catalog-navigation-item a.catalog-navigation-item-new {
   position: relative;
+
+  margin-bottom: 4px;
+  padding-top: 10px;
+  padding-bottom: 11px;
 
   font-weight: 700;
 }
@@ -1655,13 +1661,14 @@ a.quick-view {
   content: "";
 
   height: 1px;
-  width: 222%;
+  width: 166%;
 
-  margin-left: 6px;
+  margin-left: 27px;
   margin-right: 9px;
 
-  top: 25px;
+  top: 36px;
   left: -21px;
+  bottom: -3px;
 
   border-bottom: 1px solid rgba(53, 53, 53, 0.2);
 }
@@ -1671,7 +1678,8 @@ a.quick-view {
   background-color: #fbded7;
 }
 
-.catalog-navigation-items .catalog-navigation-item:active {
+.catalog-navigation-items .catalog-navigation-item:active,
+.catalog-navigation-items a:active .catalog-navigation-item {
   background-color: #f6b5a5;
 }
 
@@ -2641,7 +2649,8 @@ a.quick-view {
 }
 
 .catalog-navigation:hover .wrapper-catalog,
-.catalog-navigation:focus .wrapper-catalog {
+.catalog-navigation:focus .wrapper-catalog,
+.catalog-navigation:active .wrapper-catalog {
   display: block;
 }
 
@@ -2661,3 +2670,12 @@ a.quick-view {
 .cart-link.cart-link-empty:focus .wrapper-cart {
   display: block;
 }
+
+.false-input-price {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 7px;
+  margin-top: 1px;
+  margin-left: 11px;
+}
+

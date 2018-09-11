@@ -5,7 +5,7 @@
     <title>Магазин Глэйси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/stylepre.css" rel="stylesheet">
 </head>
 <body>
 
@@ -225,9 +225,10 @@
         <legend class="visually-hidden" aria-label="Выбирите цену мороженного"> Цена:</legend>
         <div class="range-filter">
 
-          <div class="price-controls">
-            <label class="min-price" aria-label="Введите минимальную стоимость"> Цена: <input name="min-price" type="text" value="100 руб."></label>
-            <label class="max-price" aria-label="Введите максимальную стоимость"> - <input name="max-price" type="text" value="500 руб."></label>
+          <p class="false-input-price">Цена: 100 руб. &#8212; 500 руб.</p>
+          <div class="price-controls visually-hidden">
+            <label class="min-price" aria-label="Введите минимальную стоимость"> Цена: <input name="min-price" type="text" value="100 руб." placeholder="100 руб."></label>
+            <label class="max-price" aria-label="Введите максимальную стоимость"> &#8209; <input name="max-price" type="text" value="500 руб." placeholder="500 руб. "></label>
           </div>
 
           <div class="range-controls">
