@@ -1790,7 +1790,7 @@ a.quick-view {
 }
 
 .map {
-  display: -webkit-box;
+ /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -1798,7 +1798,7 @@ a.quick-view {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
+*/
   position: relative;
 
   margin-bottom: 1px;
@@ -1818,6 +1818,7 @@ a.quick-view {
   top: 139px;
 
   background-image: url("../img/pin.svg");
+  z-index: 2;
 }
 
 .map::after {
@@ -1831,13 +1832,14 @@ a.quick-view {
   left: 302px;
 
   background-image: url("../img/shadow.png");
+  z-index: 2;
 }
 
 .feedback-contacts {
   position: absolute;
 
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+ /* -ms-flex-item-align: end;
+  align-self: flex-end;*/
 
   width: 302px;
 
@@ -1849,6 +1851,8 @@ a.quick-view {
 
   background-color: #fdfdfd;
   border-radius: 15px;
+
+  z-index: 2;
 }
 
 .contacts {
@@ -1908,7 +1912,7 @@ a.quick-view {
   padding: 0;
   margin-right: 26px;
   margin-bottom: 25px;
-  padding-top: 7px;
+  padding-top: 2px;
 }
 
 .page-footer-catalog {
@@ -2679,3 +2683,22 @@ a.quick-view {
   margin-left: 11px;
 }
 
+.main-map {
+  position:relative;
+}
+
+
+.main-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.map  {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+}
