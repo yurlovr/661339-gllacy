@@ -1678,8 +1678,7 @@ a.quick-view {
   background-color: #fbded7;
 }
 
-.catalog-navigation-items .catalog-navigation-item:active,
-.catalog-navigation-items a:active .catalog-navigation-item {
+.catalog-navigation-items .catalog-navigation-item:active {
   background-color: #f6b5a5;
 }
 
@@ -1790,15 +1789,6 @@ a.quick-view {
 }
 
 .map {
- /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-*/
   position: relative;
 
   margin-bottom: 1px;
@@ -1818,7 +1808,7 @@ a.quick-view {
   top: 139px;
 
   background-image: url("../img/pin.svg");
-  z-index: 2;
+  z-index: 0;
 }
 
 .map::after {
@@ -1832,14 +1822,11 @@ a.quick-view {
   left: 302px;
 
   background-image: url("../img/shadow.png");
-  z-index: 2;
+  z-index: 0;
 }
 
 .feedback-contacts {
   position: absolute;
-
- /* -ms-flex-item-align: end;
-  align-self: flex-end;*/
 
   width: 302px;
 

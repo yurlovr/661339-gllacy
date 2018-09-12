@@ -1,5 +1,6 @@
 "use strict"
 
+
 function openFeedBack(event) {
   event.preventDefault();
   feedBackForm.style.display = "block";
@@ -80,5 +81,27 @@ window.addEventListener("keydown", closeFeedBackEsc);
 let buttonSliderTarget = document.querySelector(".slider-btn-items");
 buttonSliderTarget.addEventListener('click',getChangeSlide);
 
+let list  = document.querySelector('.catalog-navigation-items');
+list.onmousedown = function (event) {
+  let target = event.target;
+  if (target.classList.contains('catalog-link')) {
+      target.parentElement.style.backgroundColor = "#f6b5a5";
+  }
+};
 
+list.onmouseup = function (event) {
+  let target = event.target;
+  if (target.classList.contains('catalog-link')) {
+      target.parentElement.style.backgroundColor = "";
+  }
+};
 
+list.onclick = function (event) {
+  let target = event.target;
+  if (target.classList.contains('catalog-navigation-item')) {
+    if (target.firstElementChild.classList.contains('catalog-link')) {
+      let href = target.firstElementChild.getAttribute('href');
+      window.location.assign(href);
+    }
+  }
+};

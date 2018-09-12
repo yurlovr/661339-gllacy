@@ -5,8 +5,8 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/stylepre.css" rel="stylesheet">
+    <link href="css/normolaize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
   <!-- Header -->
@@ -31,19 +31,19 @@
              <div class="wrapper-catalog">
               <ul class="catalog-navigation-items" >
                <li class="catalog-navigation-item">
-                 <a href="#" class="catalog-navigation-item-new" tabindex="3">Новинки</a>
+                 <a href="#" class="catalog-navigation-item-new catalog-link" tabindex="3">Новинки</a>
                </li>
                <li class="catalog-navigation-item">
-                 <a href="catalog.html" tabindex="4">Сливочное</a>
+                 <a class="catalog-link" href="catalog.html" tabindex="4">Сливочное</a>
                </li>
                <li class="catalog-navigation-item">
-                 <a href="#" tabindex="5">Щербеты</a>
+                 <a class="catalog-link" href="#" tabindex="5">Щербеты</a>
                </li>
                <li class="catalog-navigation-item">
-                 <a href="#" tabindex="6">Фруктовый лед</a>
+                 <a class="catalog-link" href="#" tabindex="6">Фруктовый лед</a>
                </li>
                <li class="catalog-navigation-item">
-                 <a href="#" tabindex="7">Мелорин</a>
+                 <a class="catalog-link" href="#" tabindex="7">Мелорин</a>
                </li>
               </ul>
              </div>
@@ -347,6 +347,7 @@
    <div class="container-blog">
 
     <article class="main-blog">
+      <h4 class="visually-hidden">Наш Блог</h4>
       <p>Новое в нашем блоге</p>
 
       <p class="blog-link">
@@ -390,7 +391,7 @@
     <!-- Карта -->
       <section class="main-map">
         <h3 class="visually-hidden">Карта проезда</h3>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBBmRYS8SA" width="1200" height="430" frameborder="1" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBBmRYS8SA" width="1200" height="430" allowfullscreen></iframe>
         <div class="map">
 
             <img src="img/content/map.jpg" alt="Карта проезда" width="1200" height="430">
@@ -428,7 +429,7 @@
     <footer class="page-footer">
 
       <section class="social-links">
-
+        <h4 class="visually-hidden">Социальные сети</h4>
         <ul class="social-btn-items">
           <li>
             <a class="twitter" href="#" aria-label="Подпишись на нас в Твиттере">
@@ -456,6 +457,7 @@
 
     <!--Футер меню -->
       <section class="about-production">
+        <h4 class="visually-hidden">Действующие документы</h4>
 
        <ul class="about-production-items">
           <li class="heart">
