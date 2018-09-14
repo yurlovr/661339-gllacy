@@ -5,9 +5,9 @@
     <title>Магазин Глэйси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normolaize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/stylepre.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 
 <!-- Header -->
 <header class="page-header page-header-catalog">
@@ -43,7 +43,7 @@
         <li>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 
-            <div class="search" aria-label="Поиск">
+            <div class="search" aria-label="Поиск" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
               <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
                 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981
@@ -51,7 +51,7 @@
             </svg>
             <div class="wrapper-show-search">
               <label class="search-field-container">
-                <input class="input-field input-field-search" type="search" name="search" placeholder="Что ищем?">
+                <input class="input-field input-field-search" type="search" name="search" placeholder="Что ищем?" tabindex="0">
               </label>
             </div>
           </div>
@@ -62,7 +62,7 @@
 
       <!--Поле входа -->
       <ul class="user-navigation-items">
-        <li class="login-link">
+        <li class="login-link" tabindex="0">
           <a  class="login login-modal" href="login.html" aria-label="Вход в профиль">
             Вход
           </a>
@@ -73,11 +73,11 @@
             <form class="user-login" action="https://echo.htmlacademy.ru" method="post">
 
               <label><span class="visually-hidden">Электронная почта</span>
-                <input  class="input-field" type="email" name="user-email" placeholder="Электронная почта" autofocus required>
+                <input  class="input-field" type="email" name="user-email" placeholder="Электронная почта" required>
               </label>
 
               <label><span class="visually-hidden">Пароль</span>
-                <input class="input-field" type="password" placeholder="Пароль" required>
+                <input class="input-field" type="password" placeholder="Пароль">
               </label>
 
               <div class="container-enter">
@@ -103,7 +103,7 @@
 
     <!--Корзина -->
     <ul class="cart-navigation-items">
-      <li class="cart-link cart-link-empty">
+      <li class="cart-link cart-link-empty" tabindex="0">
         <a href="shop-cart.html"  aria-label="Корзина покупок">2 товара</a>
 
        <div class="wrapper-cart">
@@ -172,7 +172,7 @@
       C 10 до 20, ежедневно<br>
     </p>
     <p class="header-contacts">
-      <a class="tel"  href="tel:+78124502525" aria-label="Наш номер телефона 8 812 450-25-25 ">8 812 450-25-25</a>
+      <a class="tel"  href="tel:+78124502525" aria-label="Наш номер телефона 8 812 450-25-25 " tabindex="15">8 812 450-25-25</a>
     </p>
 
   </section>
@@ -209,7 +209,8 @@
 
         <legend class="visually-hidden">Сортировка мороженого</legend>
 
-        <label class="form-style" aria-label="Сортировка мороженого">Сортировка:
+        <label class="form-style select-psevdo" aria-label="Сортировка мороженого">Сортировка:
+
             <select class="select" name="sort" id="sort">
               <option value="popular">по популярности</option>
               <option value="mini-price">сначала недорогие</option>
@@ -227,8 +228,8 @@
 
           <p class="false-input-price">Цена: 100 руб. &#8212; 500 руб.</p>
           <div class="price-controls visually-hidden">
-            <label class="min-price" aria-label="Введите минимальную стоимость"> Цена: <input name="min-price" type="text" value="100 руб." placeholder="100 руб."></label>
-            <label class="max-price" aria-label="Введите максимальную стоимость"> &#8209; <input name="max-price" type="text" value="500 руб." placeholder="500 руб. "></label>
+            <label class="min-price"> Цена: <input name="min-price" type="text" value="100 руб." placeholder="100 руб." tabindex="-1"></label>
+            <label class="max-price"> &#8209; <input name="max-price" type="text" value="500 руб." placeholder="500 руб." tabindex="-1"></label>
           </div>
 
           <div class="range-controls">
@@ -237,8 +238,12 @@
               <div class="bar"></div>
             </div>
 
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
+            <div class="toggle toggle-min" tabindex="0" aria-label="Выбирите минимальную стоимость">
+              <span class="visually-hidden">Минимальная цена</span>
+            </div>
+            <div class="toggle toggle-max" tabindex="0" aria-label="Выбирите максимальную стоимость">
+              <span class="visually-hidden">Максимальная цена</span>
+            </div>
           </div>
 
         </div>
@@ -605,8 +610,6 @@
     </section>
 
   </section>
-
-    <div class="end-line"></div>
 
 </main>
 
