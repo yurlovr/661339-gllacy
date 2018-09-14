@@ -2,9 +2,12 @@
 
 
 function openFeedBack(event) {
+  let userName = document.querySelector('.modal-name-user');
   event.preventDefault();
   feedBackForm.style.display = "block";
+  feedBackForm.classList.add('show-anime');
   overlay.style.display = "block";
+  userName.focus();
 }
 
 function closeFeedBack(event) {
@@ -18,6 +21,7 @@ function closeFeedBackEsc(event) {
     if (feedBackForm.style.display === "block") {
       feedBackForm.style.display = "none";
       overlay.style.display = "none";
+      feedBackForm.classList.remove('error-anime');
     }
   }
 }
@@ -66,7 +70,22 @@ function getChangeSlide(event) {
 
 }
 
+function getFormTest(event) {
+  let userMessage = document.querySelector('.text-area');
+  if (userMessage.value === "") {
+    event.preventDefault();
+    // feedBackForm.classList.remove("modal-error");
+    // feedBackForm.offsetWidth = feedBackForm.offsetWidth;
+    feedBackForm.classList.add('error-anime');
+    setTimeout(function () {
+      // alert('Ведите текст сообщения!!!');
+      feedBackForm.classList.remove('error-anime');
+    },1500);
+  }
 
+}
+
+const form = document.querySelector('.modal-form');
 const feedBackForm = document.querySelector('.modal-form-feedback');
 const overlay = document.querySelector(".modal-overlay");
 
@@ -105,3 +124,6 @@ list.onclick = function (event) {
     }
   }
 };
+
+
+form.addEventListener('submit', getFormTest);

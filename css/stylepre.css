@@ -2756,3 +2756,28 @@ a.quick-view {
   background-color:  rgba(255,255,255,0.3);
 }
 
+.show-anime {
+  animation: bounce 1.5s;
+}
+
+.error-anime {
+  animation: shake 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scaleX(-1);
+  }
+  70% {
+    transform: rotate(1440deg);
+  }
+}
+
+@keyframes shake {
+  100% {
+    transform-origin: top left;
+    transform: rotate(360deg);
+  }
+}
+
+
