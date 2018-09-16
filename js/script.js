@@ -78,9 +78,9 @@ function getFormTest(event) {
     // feedBackForm.offsetWidth = feedBackForm.offsetWidth;
     feedBackForm.classList.add('error-anime');
     setTimeout(function () {
-      // alert('Ведите текст сообщения!!!');
+      alert('Ведите текст сообщения!!!');
       feedBackForm.classList.remove('error-anime');
-    },1500);
+    },1600);
   }
 
 }
@@ -127,3 +127,20 @@ list.onclick = function (event) {
 
 
 form.addEventListener('submit', getFormTest);
+
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init);
+function init(){
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+    // Координаты центра карты.
+    // Порядок по умолчнию: «широта, долгота».
+    // Чтобы не определять координаты центра карты вручную,
+    // воспользуйтесь инструментом Определение координат.
+    center: [55.76, 37.64],
+    // Уровень масштабирования. Допустимые значения:
+    // от 0 (весь мир) до 19.
+    zoom: 7
+  });
+}

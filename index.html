@@ -377,7 +377,7 @@
             </p>
 
           <label><span class="visually-hidden">Электронная почта</span>
-            <input class="subscription-mail" type="email" name="email"  placeholder="Электронная почта">
+            <input class="subscription-mail" type="email" name="email"  placeholder="Электронная почта" required>
           </label>
 
           <button class="btn btn-null btn-send" type="submit">Отправить</button>
@@ -391,7 +391,8 @@
     <!-- Карта -->
       <section class="main-map">
         <h3 class="visually-hidden">Карта проезда</h3>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBBmRYS8SA" width="1200" height="430" allowfullscreen></iframe>
+       <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBmRYS8SA" width="1200" height="430" allowfullscreen></iframe> -->
+        <div class="iframe" id="map" style="width: 1200px; height: 430px"></div>
         <div class="map">
 
             <img src="img/content/map.jpg" alt="Карта проезда" width="1200" height="430">
@@ -518,6 +519,7 @@
   <div class="modal-overlay"></div>
 
   <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
   </body>
 </html>
