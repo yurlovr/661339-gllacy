@@ -2695,7 +2695,7 @@ a.quick-view {
 }
 
 
-.main-map iframe {
+.mymap {
   position: relative;
   z-index: 2;
 
