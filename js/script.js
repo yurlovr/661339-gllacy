@@ -1,5 +1,37 @@
 "use strict"
 
+ymaps.ready(init);
+
+let  myMap;
+let myPlacemark;
+
+function init(){
+     myMap = new ymaps.Map("map", {
+    center: [59.939306680954175,30.329245038406405],
+    zoom: 15.5,
+       controls:[],
+  });
+
+     myMap.behaviors.disable([
+       'drag',
+       'scrollZoom'
+       ]);
+
+     myPlacemark = new ymaps.Placemark([59.93860683861324,30.32302231349187], {
+       balloonContentHeader: 'Магазин Мороженого "Глейси"',
+       balloonContentBody: 'Самое Вкусное Мороженое!!!',
+       balloonContentFooter: 'т. 8-812-450-25-25',
+       hintContent: 'Магазин "Глейси"'
+  }, {
+       iconLayout: 'default#image',
+       iconImageHref: 'img/pin-shadow.png',
+       iconImageSize: [218, 142],
+       iconImageOffset: [-40, -140]
+     });
+
+  myMap.geoObjects.add(myPlacemark);
+}
+
 
 function openFeedBack(event) {
   let userName = document.querySelector('.modal-name-user');

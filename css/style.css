@@ -151,7 +151,7 @@ a { /* стили для всех ссылок кроме лого сайта и
   padding-top: 9px;
   padding-bottom: 9px;
 
-   color: #323232;
+  color: #323232;
   background-color: #f8f7f4;
   border: 1px solid #ffffff;
   border-radius: 50px;
@@ -261,8 +261,8 @@ li.catalog-navigation-current {
   background-image: url("../img/basket-red.svg");
 }
 
-.cart-link-empty  > a.cart:hover::before,
-.cart-link-empty > a.cart:focus::before {
+.cart-link-empty  >  a.cart:hover::before,
+.cart-link-empty  >  a.cart:focus::before {
   background-image: url("../img/basket-black.svg");
 }
 
@@ -1064,19 +1064,13 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-.select:hover,
-.select:focus {
+ .select:hover{
   color: #323232;
 }
 
 .select-psevdo:hover::after,
 .select-psevdo:focus::after {
   background-image: url("../img/icon-down-dir.svg");
-}
-
-.select-psevdo:hover::after .select,
-.select-psevdo:focus::after .select {
-  color: #323232;
 }
 
 .form-price {
@@ -1560,7 +1554,6 @@ input[type="password"].input-field:active {
 .btn:active {
   background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.07), rgba(0,0,0, 0.07));
   background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  background-image: -ms-linear-gradient( rgba(0, 0, 0, 0.07), rgba(0,0,0, 0.07));
   background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 
   -webkit-box-shadow: inset 0 2px 2px 0  #952718/*rgba(148, 39, 24, 0.004)*/;
@@ -2450,8 +2443,11 @@ a.quick-view {
   width: 478px;
   height: 443px;
 
-  top: 337px;
-  left: 714px;
+  left: 50%;
+  top:50%;
+
+  margin-left: -239px;
+  margin-top: -221px;
 
   border-radius: 10px;
   background-color: #f8f7f4;
@@ -2694,10 +2690,12 @@ a.quick-view {
   position:relative;
 }
 
-
 .mymap {
   position: relative;
   z-index: 2;
+
+  height: 430px;
+  margin-bottom: 6px;
 
   border: none;
 }
@@ -2732,19 +2730,45 @@ a.quick-view {
 }
 
 .show-anime {
+  -webkit-animation: bounce 1.5s;
   animation: bounce 1.5s;
 }
 
 .error-anime {
+  -webkit-animation: shake 1s;
   animation: shake 1s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -ms-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
 }
 
 @keyframes bounce {
   0% {
-    transform: scaleX(-1);
+    -ms-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
   }
-  70% {
-    transform: rotate(1440deg);
+}
+
+@-webkit-keyframes shake {
+  0%,
+  30%,
+  60%,
+  90%
+  {
+    -webkit-transform: skewY(-15deg);
+    transform: skewY(-15deg);
+  }
+  15%,
+  45%,
+  75% {
+    -webkit-transform: skewY(15deg);
+    transform: skewY(15deg);
   }
 }
 
@@ -2753,13 +2777,14 @@ a.quick-view {
   30%,
   60%,
   90%
-    {
+  {
+    -webkit-transform: skewY(-15deg);
     transform: skewY(-15deg);
   }
   15%,
   45%,
   75% {
+    -webkit-transform: skewY(15deg);
     transform: skewY(15deg);
   }
 }
-
