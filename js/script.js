@@ -21,7 +21,7 @@ function init(){
        balloonContentHeader: 'Магазин Мороженого "Глейси"',
        balloonContentBody: 'Самое Вкусное Мороженое!!!',
        balloonContentFooter: 'т. 8-812-450-25-25',
-       hintContent: 'Магазин "Глейси"'
+       hintContent: 'Магазин Мороженого "Глейси"'
   }, {
        iconLayout: 'default#image',
        iconImageHref: 'img/pin-shadow.png',
@@ -106,8 +106,6 @@ function getFormTest(event) {
   let userMessage = document.querySelector('.text-area');
   if (userMessage.value === "") {
     event.preventDefault();
-    // feedBackForm.classList.remove("modal-error");
-    // feedBackForm.offsetWidth = feedBackForm.offsetWidth;
     feedBackForm.classList.add('error-anime');
     setTimeout(function () {
       alert('Ведите текст сообщения!!!');
