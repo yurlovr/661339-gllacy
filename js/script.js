@@ -40,9 +40,12 @@ function openFeedBack(event) {
   feedBackForm.classList.add('show-anime');
   overlay.style.display = "block";
   userName.focus();
+  setTimeout(function () {
+    feedBackForm.classList.remove('show-anime')
+  },1600);
 }
 
-function closeFeedBack(event) {
+function closeFeedBack() {
   feedBackForm.style.display = "none";
   overlay.style.display = "none";
 }
@@ -99,20 +102,22 @@ function getChangeSlide(event) {
     showSlide.classList.remove('visually-hidden');
     document.body.style.backgroundColor = "#9d8b84";
   }
-
 }
 
 function getFormTest(event) {
+  let userName = document.querySelector('.modal-name-user');
+  let userMail = document.querySelector('.modal-mail-user');
   let userMessage = document.querySelector('.text-area');
-  if (userMessage.value === "") {
-    event.preventDefault();
-    feedBackForm.classList.add('error-anime');
-    setTimeout(function () {
-      alert('Ведите текст сообщения!!!');
-      feedBackForm.classList.remove('error-anime');
-    },1600);
-  }
 
+  if ((!userMessage.value.trim()) ||
+     (!userMail.value.trim()) ||
+     (!userName.value.trim())) {
+     event.preventDefault();
+     feedBackForm.classList.add('error-anime');
+     setTimeout(function () {
+       feedBackForm.classList.remove('error-anime');
+     }, 1600);
+  }
 }
 
 const form = document.querySelector('.modal-form');
@@ -154,6 +159,5 @@ list.onclick = function (event) {
     }
   }
 };
-
 
 form.addEventListener('submit', getFormTest);
